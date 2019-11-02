@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>杜柏林的博客</title>
+  
+  <subtitle>berlin blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://825221503.github.io/"/>
+  <updated>2019-11-02T00:46:38.432Z</updated>
+  <id>https://825221503.github.io/</id>
+  
+  <author>
+    <name>Berlin</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>个人博客</title>
+    <link href="https://825221503.github.io/2019/10/31/blog-open-source/"/>
+    <id>https://825221503.github.io/2019/10/31/blog-open-source/</id>
+    <published>2019-10-31T03:41:03.000Z</published>
+    <updated>2019-11-02T00:46:38.432Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;简短介绍&quot;&gt;&lt;a href=&quot;#简短介绍&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="全栈开发技术博客" scheme="https://825221503.github.io/categories/%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="Hexo" scheme="https://825221503.github.io/tags/Hexo/"/>
+    
+      <category term="Github" scheme="https://825221503.github.io/tags/Github/"/>
+    
+      <category term="博客" scheme="https://825221503.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+</feed>
