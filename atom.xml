@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://825221503.github.io/"/>
-  <updated>2019-11-02T00:46:38.432Z</updated>
+  <updated>2019-11-04T08:48:58.532Z</updated>
   <id>https://825221503.github.io/</id>
   
   <author>
@@ -17,11 +17,45 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>article title</title>
+    <link href="https://825221503.github.io/2019/11/04/article-title/"/>
+    <id>https://825221503.github.io/2019/11/04/article-title/</id>
+    <published>2019-11-04T08:39:45.000Z</published>
+    <updated>2019-11-04T08:48:58.532Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;思考人生&quot;&gt;&lt;a href=&quot;#思考人生&quot; class=&quot;headerlink&quot; title=&quot;思考人生&quot;&gt;&lt;/a&gt;思考人生&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;自己应该努力，都已经二十六的大伙子了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="生活日记" scheme="https://825221503.github.io/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="学习" scheme="https://825221503.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="复习" scheme="https://825221503.github.io/tags/%E5%A4%8D%E4%B9%A0/"/>
+    
+      <category term="思考" scheme="https://825221503.github.io/tags/%E6%80%9D%E8%80%83/"/>
+    
+  </entry>
+  
+  <entry>
     <title>个人博客</title>
     <link href="https://825221503.github.io/2019/10/31/blog-open-source/"/>
     <id>https://825221503.github.io/2019/10/31/blog-open-source/</id>
     <published>2019-10-31T03:41:03.000Z</published>
-    <updated>2019-11-02T00:46:38.432Z</updated>
+    <updated>2019-11-02T08:53:37.581Z</updated>
     
     <summary type="html">
     

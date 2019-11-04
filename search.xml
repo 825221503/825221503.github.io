@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>article title</title>
+      <link href="/2019/11/04/article-title/"/>
+      <url>/2019/11/04/article-title/</url>
+      
+        <content type="html"><![CDATA[<h1 id="思考人生"><a href="#思考人生" class="headerlink" title="思考人生"></a>思考人生</h1><blockquote><p>自己应该努力，都已经二十六的大伙子了。</p></blockquote><hr><h2 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h2><p>生活是该把学习放第一，才能支撑起我喜欢的，爱的人才可以在自己有所成以后可以光明正大的抬起头，说人生没有捷径，都是靠自己一点点的努力换来的</p><table>  <tbody><tr>    <td><img width="100" src="medias/reward/alipay.bmp"></td>        <td><img width="100" src="medias/reward/wechat.bmp"></td>        <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活日记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> 复习 </tag>
+            
+            <tag> 思考 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>个人博客</title>
       <link href="/2019/10/31/blog-open-source/"/>
       <url>/2019/10/31/blog-open-source/</url>
