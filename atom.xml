@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://825221503.github.io/"/>
-  <updated>2019-11-04T08:48:58.532Z</updated>
+  <updated>2019-11-05T14:30:42.866Z</updated>
   <id>https://825221503.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>js基础</title>
+    <link href="https://825221503.github.io/2019/11/05/js-ji-chu/"/>
+    <id>https://825221503.github.io/2019/11/05/js-ji-chu/</id>
+    <published>2019-11-05T14:24:55.000Z</published>
+    <updated>2019-11-05T14:30:42.866Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;循环语句练习&quot;&gt;&lt;a href=&quot;#循环语句练习&quot; class=&quot;headerlink&quot; title=&quot;循环语句练习&quot;&gt;&lt;/a&gt;循环语句练习&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-javascript&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+      <category term="js基础练习" scheme="https://825221503.github.io/categories/js%E5%9F%BA%E7%A1%80%E7%BB%83%E4%B9%A0/"/>
+    
+    
+      <category term="javascript" scheme="https://825221503.github.io/tags/javascript/"/>
+    
+      <category term="if for swith" scheme="https://825221503.github.io/tags/if-for-swith/"/>
+    
+  </entry>
   
   <entry>
     <title>article title</title>
