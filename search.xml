@@ -62,40 +62,11 @@
     
     
     <entry>
-      <title>article title</title>
-      <link href="/2019/11/04/article-title/"/>
-      <url>/2019/11/04/article-title/</url>
-      
-        <content type="html"><![CDATA[<h1 id="思考人生"><a href="#思考人生" class="headerlink" title="思考人生"></a>思考人生</h1><blockquote><p>自己应该努力，都已经二十六的大伙子了。</p></blockquote><hr><h2 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h2><p>生活是该把学习放第一，才能支撑起我喜欢的，爱的人才可以在自己有所成以后可以光明正大的抬起头，说人生没有捷径，都是靠自己一点点的努力换来的</p><table>  <tbody><tr>    <td><img width="100" src="medias/reward/alipay.bmp"></td>        <td><img width="100" src="medias/reward/wechat.bmp"></td>        <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活日记 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 学习 </tag>
-            
-            <tag> 复习 </tag>
-            
-            <tag> 思考 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>个人博客</title>
       <link href="/2019/10/31/blog-open-source/"/>
       <url>/2019/10/31/blog-open-source/</url>
       
-        <content type="html"><![CDATA[<h1 id="简短介绍"><a href="#简短介绍" class="headerlink" title="简短介绍"></a>简短介绍</h1><p>以md语法写的博客</p><blockquote><blockquote><blockquote><blockquote><blockquote></blockquote></blockquote></blockquote></blockquote></blockquote><p>本博客基于<code>Hexo</code>框架搭建，用到[hexo-theme-matery]</p><hr><h2 id="世界很晚，心情很轻"><a href="#世界很晚，心情很轻" class="headerlink" title="世界很晚，心情很轻"></a>世界很晚，心情很轻</h2><p><strong>生活</strong>:</p><ul><li><p>输出是最好的输入</p></li><li><p>罪犯和艺术家的一个共同特点,他们都不喜欢生活本来的样子</p></li><li><p>这个世界上只有两件事绝对会报复你——一个是不努力的辜负，一个是不好好照顾身体的后患。</p></li><li><p>唔使急 但要快 Don’t hurry！Be quick!</p></li><li><p>生活就像喝可乐，你会快乐的胖起来!</p></li><li><p>乱世更要追求人生上限，因为下限不可保。</p></li><li><p>人与人的隔阂因自持不同而产生</p></li><li><p>如果感情都很顺利，哪来那么多好听的歌 </p></li><li><p>我想把世界上最好的都给你</p></li><li><p>却发现世界上最好的就是你</p></li><li><p>鲜花虽美，不及你万分之一</p></li><li><p>少说气话,多接吻, 心往一处想,劲往一处使,日子很甜的。 生活总是爱欺负那些不相爱的情侣, 对于-相爱的,它真的是一点办法都没有。</p></li><li><p>走M路线的人的晋升条件里，业务水平只占八分之一。</p></li><li><p>另外七项大概是：</p></li></ul><ol><li>资源和人脉；</li><li>沟通和协调能力；</li><li>抗压与人格魅力；</li><li>招人能力；</li><li>忠诚；</li><li>良好的资历、形象与演说公关能力；</li><li>熬的久。</li></ol><ul><li><p>知识：我们知道和理解的东西，广度和深度是评价标准。</p></li><li><p>经验：我们能操作和完成的技术，熟练程度是评价标准。</p></li><li><p>才能：我们无意识使用的技能、品质和特质。局有强烈的个人特色，无评价标准。</p></li><li><p>但我深知能力不足却得到好机会的可怕之处。 </p></li><li><p>马克思生于哪一年？俺可以脱口而出：1818年。为什么记得这么牢？当年的政治老师说：马克思一生下来，就一巴掌一巴掌地扇资本主义的耳光。 </p></li><li><p>努力想得到什么东西，其实只要你沉着镇静、实事求是，就可以成功的、神不知鬼不觉的达到目的。而如果过于使劲，闹得凶，太幼稚，太没有经验，就哭啊，抓啊，拉啊，像一个小孩扯桌布，结果更多的是一无所获，只不过把桌上的好东西都扯到地上，永远也得不到。</p></li><li><p>当你老了，回顾一生，就会发觉：什么时候出国读书、什么时候决定做第一份职业、何时选定了对象而恋爱、什么时候结婚，其实都是命运的巨变。只是当时站在三岔路口，眼见风云千樯，你作出抉择的那一日，在日记上，相当沉闷和平凡，当时还以为是生命中普通的一天。</p></li><li><p>我想变成你。见你所见，爱你所爱。 </p></li><li><ul><li>I want to be what you are . See what you see , love what you love . </li></ul></li><li><p>“媳妇儿”，“不好意思叫早了”</p></li><li><p>你是年少的欢喜，这句话反过来是，喜欢的少年是你。一百分</p></li><li><p>虽无法想象最好的自己是何等模样,但我们一直寻找每个阶段更好的自己</p></li><li><p>在所有人事已非的景色里，我最喜欢你 </p></li><li><p>下次你路过，人间已无我。</p></li></ul><p><a href="http://www.baidu.com" target="_blank" rel="noopener">百度</a></p><hr><table>  <tbody><tr>    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h1 id="简短介绍"><a href="#简短介绍" class="headerlink" title="简短介绍"></a>简短介绍</h1><p>以md语法写的博客</p><blockquote><blockquote><blockquote><blockquote><blockquote></blockquote></blockquote></blockquote></blockquote></blockquote><p>本博客基于<code>Hexo</code>框架搭建，用到[hexo-theme-matery]</p><hr><h2 id="世界很晚，心情很轻"><a href="#世界很晚，心情很轻" class="headerlink" title="世界很晚，心情很轻"></a>世界很晚，心情很轻</h2><p><strong>生活</strong>:</p><ul><li><p>输出是最好的输入</p></li><li><p>罪犯和艺术家的一个共同特点,他们都不喜欢生活本来的样子</p></li><li><p>这个世界上只有两件事绝对会报复你——一个是不努力的辜负，一个是不好好照顾身体的后患。</p></li><li><p>唔使急 但要快 Don’t hurry！Be quick!</p></li><li><p>生活就像喝可乐，你会快乐的胖起来!</p></li><li><p>乱世更要追求人生上限，因为下限不可保。</p></li><li><p>人与人的隔阂因自持不同而产生</p></li><li><p>如果感情都很顺利，哪来那么多好听的歌 </p></li><li><p>我想把世界上最好的都给你</p></li><li><p>却发现世界上最好的就是你</p></li><li><p>鲜花虽美，不及你万分之一</p></li><li><p>少说气话,多接吻, 心往一处想,劲往一处使,日子很甜的。 生活总是爱欺负那些不相爱的情侣, 对于-相爱的,它真的是一点办法都没有。</p></li><li><p>走M路线的人的晋升条件里，业务水平只占八分之一。</p></li><li><p>另外七项大概是：</p></li></ul><ol><li>资源和人脉；</li><li>沟通和协调能力；</li><li>抗压与人格魅力；</li><li>招人能力；</li><li>忠诚；</li><li>良好的资历、形象与演说公关能力；</li><li>熬的久。</li></ol><ul><li><p>知识：我们知道和理解的东西，广度和深度是评价标准。</p></li><li><p>经验：我们能操作和完成的技术，熟练程度是评价标准。</p></li><li><p>才能：我们无意识使用的技能、品质和特质。局有强烈的个人特色，无评价标准。</p></li><li><p>但我深知能力不足却得到好机会的可怕之处。 </p></li><li><p>马克思生于哪一年？俺可以脱口而出：1818年。为什么记得这么牢？当年的政治老师说：马克思一生下来，就一巴掌一巴掌地扇资本主义的耳光。 </p></li><li><p>努力想得到什么东西，其实只要你沉着镇静、实事求是，就可以成功的、神不知鬼不觉的达到目的。而如果过于使劲，闹得凶，太幼稚，太没有经验，就哭啊，抓啊，拉啊，像一个小孩扯桌布，结果更多的是一无所获，只不过把桌上的好东西都扯到地上，永远也得不到。</p></li><li><p>当你老了，回顾一生，就会发觉：什么时候出国读书、什么时候决定做第一份职业、何时选定了对象而恋爱、什么时候结婚，其实都是命运的巨变。只是当时站在三岔路口，眼见风云千樯，你作出抉择的那一日，在日记上，相当沉闷和平凡，当时还以为是生命中普通的一天。</p></li><li><p>我想变成你。见你所见，爱你所爱。 </p></li><li><ul><li>I want to be what you are . See what you see , love what you love . </li></ul></li><li><p>“媳妇儿”，“不好意思叫早了”</p></li><li><p>你是年少的欢喜，这句话反过来是，喜欢的少年是你。一百分</p></li><li><p>虽无法想象最好的自己是何等模样,但我们一直寻找每个阶段更好的自己</p></li><li><p>在所有人事已非的景色里，我最喜欢你 </p></li><li><p>下次你路过，人间已无我。</p></li></ul><p><a href="http://www.baidu.com" target="_blank" rel="noopener">百度</a></p><hr><table>  <tbody><tr>    <td><img width="100" src=""></td>        <td><img width="100" src=""></td>        <td><img width="100" src=""></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>
