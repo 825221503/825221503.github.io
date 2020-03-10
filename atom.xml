@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://825221503.github.io/"/>
-  <updated>2019-12-09T15:30:49.559Z</updated>
+  <updated>2020-03-10T15:23:09.800Z</updated>
   <id>https://825221503.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>js-Answers</title>
+    <link href="https://825221503.github.io/2020/03/10/js-answers01/"/>
+    <id>https://825221503.github.io/2020/03/10/js-answers01/</id>
+    <published>2020-03-10T15:18:16.000Z</published>
+    <updated>2020-03-10T15:23:09.800Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;JavaScript的组成&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;JavaScript 由以下三部分组成：
+1. ECMAScript（核心）：JavaScript 语言基础
+2. DOM（文档对象模型）：规定了访问HTML和XML的接口
+3.
+        
+      
+    
+    </summary>
+    
+      <category term="js-Answers" scheme="https://825221503.github.io/categories/js-Answers/"/>
+    
+    
+      <category term="JavaScript front-end" scheme="https://825221503.github.io/tags/JavaScript-front-end/"/>
+    
+  </entry>
   
   <entry>
     <title>数据结构与算法</title>
