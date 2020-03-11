@@ -6,15 +6,15 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="js-Answers, JavaScript Vue.js php Heart have a code, Fine smelling programming">
+    <meta name="keywords" content="js-Answers(二), JavaScript Vue.js php Heart have a code, Fine smelling programming">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY">
-    <meta name="description" content="
-JavaScript的组成
-JavaScript 由以下三部分组成：
-1. ECMAScript（核心）：JavaScript 语言基础
-2. DOM（文档对象模型）：规定了访问HTML和XML的接口
-3. BOM（浏览器对象模型）：提供">
+    <meta name="description" content="前端框架相关
+什么是单页面应用(SPA)？
+* 单页面应用(SPA)是指用户在浏览器加载单一的HTML页面，后续请求都无需再离开此页
+* 目标：旨在用为用户提供了更接近本地移动APP或桌面应用程序的体验。
+
+* 流程：第一次请求时，将导航页">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +22,7 @@ JavaScript 由以下三部分组成：
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>js-Answers | 杜柏林的博客</title>
+    <title>js-Answers(二) | 杜柏林的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -606,13 +606,13 @@ JavaScript 由以下三部分组成：
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        js-Answers
+                        js-Answers(二)
                     </div>
                 </div>
             </div>
@@ -748,7 +748,7 @@ JavaScript 由以下三部分组成：
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-10
+                    2020-03-11
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -762,14 +762,14 @@ JavaScript 由以下三部分组成：
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        8.1k
+                        7.8k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        32 分
+                        29 分
                     </div>
                     
                 
@@ -786,755 +786,674 @@ JavaScript 由以下三部分组成：
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <ul>
-<li><p>JavaScript的组成</p>
-<pre><code>JavaScript 由以下三部分组成：
-1. ECMAScript（核心）：JavaScript 语言基础
-2. DOM（文档对象模型）：规定了访问HTML和XML的接口
-3. BOM（浏览器对象模型）：提供了浏览器窗口之间进行交互的对象和方法</code></pre></li>
-<li><p>JS的基本数据类型和引用数据类型</p>
-<pre><code>* 基本数据类型：undefined、null、boolean、number、string、symbol
-* 引用数据类型：object、array、function</code></pre></li>
-<li><p>检测浏览器版本版本有哪些方式？</p>
-<pre><code>* 根据 navigator.userAgent   //  UA.toLowerCase().indexOf('chrome')
-* 根据 window 对象的成员       // 'ActiveXObject' in window</code></pre></li>
-<li><p>介绍JS有哪些内置对象？</p>
-<pre><code>* 数据封装类对象：Object、Array、Boolean、Number、String
-* 其他对象：Function、Arguments、Math、Date、RegExp、Error
-* ES6新增对象：Symbol、Map、Set、Promises、Proxy、Reflect</code></pre></li>
-<li><p>说几条写JavaScript的基本规范？</p>
-<pre><code>1.代码缩进，建议使用“四个空格”缩进
-2.代码段使用花括号{}包裹
-3.语句结束使用分号;
-4.变量和函数在使用前进行声明
-5.以大写字母开头命名构造函数，全大写命名常量
-6.规范定义JSON对象，补全双引号
-7.用{}和[]声明对象和数组</code></pre></li>
-<li><p>如何编写高性能的JavaScript？</p>
-<pre><code>* 遵循严格模式："use strict";
-* 将js脚本放在页面底部，加快渲染页面
-* 将js脚本将脚本成组打包，减少请求
-* 使用非阻塞方式下载js脚本
-* 尽量使用局部变量来保存全局变量
-* 尽量减少使用闭包
-* 使用 window 对象属性方法时，省略 window
-* 尽量减少对象成员嵌套
-* 缓存 DOM 节点的访问
-* 通过避免使用 eval() 和 Function() 构造器
-* 给 setTimeout() 和 setInterval() 传递函数而不是字符串作为参数
-* 尽量使用直接量创建对象和数组
-* 最小化重绘(repaint)和回流(reflow)</code></pre></li>
-<li><p>描述浏览器的渲染过程，DOM树和渲染树的区别？</p>
-<pre><code>* 浏览器的渲染过程：
-  1. 解析HTML构建 DOM(DOM树)，并行请求 css/image/js
-  2. CSS 文件下载完成，开始构建 CSSOM(CSS树)
-  3. CSSOM 构建结束后，和 DOM 一起生成 Render Tree(渲染树)
-  4. 布局(Layout)：计算出每个节点在屏幕中的位置
-  5. 显示(Painting)：通过显卡把页面画到屏幕上
+                <h2 id="前端框架相关"><a href="#前端框架相关" class="headerlink" title="前端框架相关"></a>前端框架相关</h2><ul>
+<li><p>什么是单页面应用(SPA)？</p>
+<pre><code>* 单页面应用(SPA)是指用户在浏览器加载单一的HTML页面，后续请求都无需再离开此页
+* 目标：旨在用为用户提供了更接近本地移动APP或桌面应用程序的体验。
 
-* DOM树 和 渲染树 的区别：
-   1. DOM树与HTML标签一一对应，包括head和隐藏元素
-   2. 渲染树不包括head和隐藏元素，大段文本的每一个行都是独立节点，每一个节点都有对应的css属性</code></pre></li>
-<li><p>重绘和回流（重排）的区别和关系？</p>
-<pre><code>* 重绘：当渲染树中的元素外观（如：颜色）发生改变，不影响布局时，产生重绘
-* 回流：当渲染树中的元素的布局（如：尺寸、位置、隐藏/状态状态）发生改变时，产生重绘回流
-   注意：JS获取Layout属性值（如：offsetLeft、scrollTop、getComputedStyle等）也会引起回流
-       -- 因为浏览器需要通过回流计算最新值
-* 回流必将引起重绘，而重绘不一定会引起回流</code></pre></li>
-<li><p>如何最小化重绘(repaint)和回流(reflow)？</p>
-<pre><code>1. 需要要对元素进行复杂的操作时，可以先隐藏(display:"none")，操作完成后再显示
-2. 需要创建多个DOM节点时，使用DocumentFragment创建完后一次性的加入document
-3. 缓存Layout属性值，如：var left = elem.offsetLeft; 这样，多次使用 left 只产生一次回流
-4. 尽量避免用table布局（table元素一旦触发回流就会导致table里所有的其它元素回流）
-5. 避免使用css表达式(expression)，因为每次调用都会重新计算值（包括加载页面）
-6. 尽量使用 css 属性简写，如：用 border 代替 border-width, border-style, border-color
-7. 批量修改元素样式：elem.className 和 elem.style.cssText 代替 elem.style.xxx</code></pre></li>
-<li><p>script 的位置是否会影响首屏显示时间？</p>
-<pre><code>1. 在解析 HTML 生成 DOM 过程中，js 文件的下载是并行的，不需要 DOM 处理到 script 节点。
-     因此，script 的位置不影响首屏显示的开始时间。
-2. 浏览器解析 HTML 是自上而下的线性过程，script作为 HTML 的一部分同样遵循这个原则。
-     因此，script 会延迟 DomContentLoad，只显示其上部分首屏内容，从而影响首屏显示的完成时间。</code></pre></li>
-<li><p>解释JavaScript中的作用域与变量声明提升？</p>
-<pre><code>* JavaScript作用域：
-   在Java、C等语言中，作用域为for语句、if语句或{}内的一块区域，称为作用域；
-   而在 JavaScript 中，作用域为function(){}内的区域，称为函数作用域。
+* 流程：第一次请求时，将导航页传输到客户端，其余请求通过 REST API 获取 JSON 数据
+* 实现：数据的传输通过 Web Socket API 或 RPC(远程过程调用)。
 
-* JavaScript变量声明提升：
-  在JavaScript中，函数声明与变量声明经常被JavaScript引擎隐式地提升到当前作用域的顶部。
-  * 声明语句中的赋值部分并不会被提升，只有名称被提升
-  * 函数声明的优先级高于变量，如果变量名跟函数名相同且未赋值，则函数声明会覆盖变量声明
-  * 如果函数有多个同名参数，那么最后一个参数（即使没有定义）会覆盖前面的同名参数</code></pre></li>
-<li><p>介绍JavaScript的原型，原型链？有什么特点？</p>
-<pre><code>* 原型：
-  JavaScript的所有对象中都包含了一个 [__proto__] 内部属性，这个属性所对应的就是该对象的原型。
-  JavaScript的函数对象，除了原型 [__proto__] 之外，还预置了 prototype 属性。
-  当函数对象作为构造函数创建实例时，该 prototype 属性值将被作为实例对象的原型 [__proto__]。
-
-* 原型链：
-  当一个对象调用的属性/方法自身不存在时，就会去自己 [__proto__] 关联的前辈 prototype 对象上去找。
-  如果没找到，就会去该 prototype 原型 [__proto__] 关联的前辈 prototype 去找。
-  依次类推，直到找到属性/方法或 undefined 为止。从而形成了所谓的“原型链”。
-
-* 原型特点：
-  JavaScript对象是通过引用来传递的，当修改原型时，与之相关的对象也会继承这一改变</code></pre></li>
-<li><p>JavaScript有几种类型的值？，你能画一下他们的内存图吗？</p>
-<pre><code>* 原始数据类型（Undefined，Null，Boolean，Number、String）-- 栈
-* 引用数据类型（对象、数组和函数）-- 堆
-
-* 两种类型的区别是：存储位置不同：
- - 原始数据类型是直接存储在栈(stack)中的简单数据段，占据空间小、大小固定，属于被频繁使用数据；
-
- - 引用数据类型存储在堆(heap)中的对象，占据空间大、大小不固定，如果存储在栈中，将会影响程序运行的性能；
-  引用数据类型在栈中存储了指针，该指针指向堆中该实体的起始地址。
-  当解释器寻找引用值时，会首先检索其在栈中的地址，取得地址后从堆中获得实体。</code></pre></li>
-<li><p>JavaScript创建对象的几种方式？</p>
-<pre><code>1. 工厂方式（使用内置 Object 对象生成）
+* 优点：用户体验流畅，服务器压力小，前后端职责分离
+* 缺点：关键词布局难度加大，不利于 SEO</code></pre></li>
+<li><p>什么是“前端路由”? 什么时候适用“前端路由”? 有哪些优点和缺点?</p>
+<pre><code>* 前端路由通过 URL 和 History 来实现页面切换
+* 应用：前端路由主要适用于“前后端分离”的单页面应用(SPA)项目
+* 优点：用户体验好，交互流畅
+* 缺点：浏览器“前进”、“后退”会重新请求，无法合理利用缓存</code></pre></li>
+<li><p>模块化开发怎么做？</p>
+<pre><code>* 封装对象作为命名空间 -- 内部状态可以被外部改写
+* 立即执行函数(IIFE) -- 需要依赖多个JS文件，并且严格按顺序加载
+* 使用模块加载器 -- require.js, sea.js, EC6 模块</code></pre></li>
+<li><p>通行的 Javascript 模块的规范有哪些？</p>
+<pre><code>* CommonJS -- 主要用在服务器端 node.js
 ​```javascript
-   var Dog = new Object();
-   Dog.name = "旺财";
-   Dog.age = 3;
-   Dog.work = function(){
-       alert("我是" + Dog.name + ",汪汪汪...");
-   }
-   Dog.work();
+  var math = require('./math');
+  math.add(2,3);
 ​```
-2. 对象字面量方式（使用 JSON 对象生成）
+* AMD(异步模块定义) -- require.js
 ​```javascript
-   var Person = {
-       firstname: "Mark",
-       lastname: "Yun",
-       age: 25,
-       introduce: function(){
-           alert('I am ' + Person.firstname + ' ' + Person.lastname);
-       }
-   };
-   Person.introduce();
+  require(['./math'], function (math) {
+      math.add(2, 3);
+  });
 ​```
-3. 构造函数方式（内部用 this 关键字指向实例对象）
+* CMD(通用模块定义) -- sea.js
 ​```javascript
-   function Pet(name, age, hobby){
-      this.name = name;
-      this.age = age;
-      this.hobby = hobby;
-      this.eat = function(){
-         alert("我叫" + this.name + ",我喜欢" + this.hobby + ",是个程序员");
-      }
-   }
-   var maidou = new Pet("麦兜", 25, "coding");
-   maidou.eat();
+  var math = require('./math');
+  math.add(2,3);
 ​```
-4. 原型方式（在 prototype 上添加属性和方法）
+* E6 模块
 ​```javascript
-    function Dog(){}
-    Dog.prototype.name = "旺财";
-    Dog.prototype.eat = function(){
-       alert(this.name + "是个吃货");
-    }
-    var wangcai = new Dog();
-    wangcai.eat();
-​```
-5. 混合方式（构造函数方式[this] + 原型方式[prototype]）
-​```javascript
-   function Mobile(name, price){
-     this.name = name;
-     this.price = price;
-   }
-   Mobile.prototype.sell = function(){
-      alert(this.name + "，售价 $" + this.price);
-   }
-   var iPhone7 = new Mobile("iPhone7", 1000);
-   iPhone7.sell();
-​```javascript</code></pre></li>
-<li><p>JavaScript如何实现一个类，怎么实例化这个类？</p>
-<pre><code>1. 构造函数法（this + prototype） -- 用 new 关键字 生成实例对象
-  缺点：用到了 this 和 prototype，编写复杂，可读性差
+  import {math} from './math';
+  math.add(2, 3);
+​```</code></pre></li>
+<li><p>AMD 与 CMD 规范的区别？</p>
+<pre><code>* 规范化产出：
+  - AMD 由 RequireJS 推广产出
+  - CMD 由 SeaJS 推广产出
+
+* 模块的依赖:
+  - AMD 提前执行，推崇依赖前置
+  - CMD 延迟执行，推崇依赖就近
+
+* API 功能:
+  - AMD 的 API 默认多功能（分全局 require 和局部 require）
+  - CMD 的 API 推崇职责单一纯粹（没有全局 require）
+
+* 模块定义规则：
+  - AMD 默认一开始就载入全部依赖模块
   ```javascript
-    function Mobile(name, price){
-       this.name = name;
-       this.price = price;
-     }
-     Mobile.prototype.sell = function(){
-        alert(this.name + "，售价 $" + this.price);
-     }
-     var iPhone7 = new Mobile("iPhone7", 1000);
-     iPhone7.sell();</code></pre><ol start="2">
-<li><p>Object.create 法 – 用 Object.create() 生成实例对象<br>缺点：不能实现私有属性和私有方法，实例对象之间也不能共享数据<br>```javascript<br>var Person = {</p>
-<pre><code>firstname: "Mark",
-lastname: "Yun",
-age: 25,
-introduce: function(){
-    alert('I am ' + Person.firstname + ' ' + Person.lastname);
-}</code></pre><p>};</p>
-<p>var person = Object.create(Person);<br>person.introduce();</p>
-<p>// Object.create 要求 IE9+，低版本浏览器可以自行部署：<br>if (!Object.create) {<br>　   Object.create = function (o) {<br>　　　 function F() {}<br>　　　 F.prototype = o;<br>　　　 return new F();<br>　　};<br>　}<br>​```</p>
-</li>
-<li><p>极简主义法（消除 this 和 prototype） – 调用 createNew() 得到实例对象<br>优点：容易理解，结构清晰优雅，符合传统的”面向对象编程”的构造<br>```javascript<br>var Cat = {<br>  age: 3, // 共享数据 – 定义在类对象内，createNew() 外<br>  createNew: function () {</p>
-<pre><code>var cat = {};
-// var cat = Animal.createNew(); // 继承 Animal 类
-cat.name = "小咪";
-var sound = "喵喵喵"; // 私有属性--定义在 createNew() 内，输出对象外
-cat.makeSound = function () {
-  alert(sound);  // 暴露私有属性
-};
-cat.changeAge = function(num){
-  Cat.age = num; // 修改共享数据
-};
-return cat; // 输出对象</code></pre><p>  }<br>};</p>
-<p>var cat = Cat.createNew();<br>cat.makeSound();<br>​```</p>
-</li>
-<li><p>ES6 语法糖 class – 用 new 关键字 生成实例对象<br>​```javascript<br>class Point {<br>  constructor(x, y) {</p>
-<pre><code>this.x = x;
-this.y = y;</code></pre><p>  }<br>  toString() {</p>
-<pre><code>return '(' + this.x + ', ' + this.y + ')';</code></pre><p>  }<br>}</p>
-</li>
-</ol>
-<p>var point = new Point(2, 3);<br>​```</p>
+    define(['./a', './b'], function(a, b) {
+        a.doSomething();
+        b.doSomething();
+    });</code></pre><ul>
+<li>CMD 依赖模块在用到时才就近载入<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">define</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>require<span class="token punctuation">,</span> exports<span class="token punctuation">,</span> module<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    a<span class="token punctuation">.</span><span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./b'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    b<span class="token punctuation">.</span><span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <pre><code></code></pre></li>
-<li><p>Javascript如何实现继承？</p>
-<pre><code>1. 构造函数绑定：使用 call 或 apply 方法，将父对象的构造函数绑定在子对象上
-​```javascript   　
-  function Cat(name,color){
-   　Animal.apply(this, arguments);
-   　this.name = name;
-   　this.color = color;
-  }
-​```
-2. 实例继承：将子对象的 prototype 指向父对象的一个实例
+</ul>
+</li>
+<li><p>requireJS的核心原理是什么？</p>
+<pre><code>每个模块所依赖模块都会比本模块预先加载</code></pre></li>
+<li><p>对 Node.js 的优点、缺点提出了自己的看法？ Node.js的特点和适用场景？</p>
+<pre><code>* Node.js的特点：单线程，非阻塞I/O，事件驱动
+* Node.js的优点：擅长处理高并发；适合I/O密集型应用
+* Node.js的缺点：不适合CPU密集运算；不能充分利用多核CPU；可靠性低，某个环节出错会导致整个系统崩溃
+* Node.js的适用场景：
+  - RESTful API
+  - 实时应用：在线聊天、图文直播
+  - 工具类应用：前端部署(npm, gulp)
+  - 表单收集：问卷系统</code></pre></li>
+<li><p>介绍 route, server-side rendering, middleware, cluster, nodemon, pm2, node-inspector？</p>
+<pre><code>* route                 路由（用来保证用户界面与 URL 的同步）
+* server-side rendering 服务器端渲染（在服务器端将模板和数据合成，返回最终的HTML页面）
+* middleware            中间件（过滤器 + 增强器）
+* cluster               多核处理模块（打破 Node.js 只支持单核 CPU 的限制）
+* nodemon               监控 Node.js 源代码（修改自动重启服务）
+* pm2                   Node.js 进程管理器（0秒停机重载进程）
+* node-inspector        Node.js 调试工具（在浏览器调试服务器端 Node.js 代码）</code></pre></li>
+<li><p>如何判断当前脚本运行在浏览器还是node环境中？</p>
+<pre><code>判断 Global 对象是否为 window，如果不为 window，当前脚本没有运行在浏览器中
+</code></pre></li>
+<li><p>什么是 npm ？</p>
+<pre><code>npm 是 Node.js 的模块管理和发布工具
+</code></pre></li>
+<li><p>什么是 WebKit ？</p>
+<pre><code>* WebKit 是一个开源的浏览器内核，由渲染引擎(WebCore)和JS解释引擎(JSCore)组成
+* 通常所说的 WebKit 指的是 WebKit(WebCore)，主要工作是进行 HTML/CSS 渲染
+* WebKit 一直是 Safari 和 Chrome(之前) 使用的浏览器内核，后来 Chrome 改用Blink 内核
+</code></pre></li>
+<li><p>如何测试前端代码? 知道 Unit Test，BDD, TDD 么? 怎么测试你的前端工程(mocha, jasmin..)?</p>
+<pre><code>* 通过为前端代码编写单元测试(Unit Test)来测试前端代码
+* Unit Test：一段用于测试一个模块或接口是否能达到预期结果的代码
+* BDD：行为驱动开发 -- 业务需求描述产出产品代码的开发方法
+* TDD：测试驱动开发 -- 单元测试用例代码产出产品代码的开发方法
+* 单元测试框架：
 ​```javascript
-  Cat.prototype = new Animal();
-  Cat.prototype.constructor = Cat;
-​```
-3. 拷贝继承：如果把父对象的所有属性和方法，拷贝进子对象
-​```javascript         　　
-  function extend(Child, Parent) {
-　　　var p = Parent.prototype;
-　　　var c = Child.prototype;
-　　　for (var i in p) {
-　　　   c[i] = p[i];
-　　　}
-　　　c.uber = p;
-　 }
-​```
-4. 原型继承：将子对象的 prototype 指向父对象的 prototype
+ // mocha 示例
+ describe('Test add', function() {
+   it('1 + 2 = 3', function() {
+       expect(add(1, 2)).to.be.equal(3);
+   });
+ });
+
+ // jasmin 示例
+ describe('Test add', function () {
+     it('1 + 2 = 3', function () {
+         expect(add(1, 2)).toEqual(3);
+     });
+ });</code></pre><pre><code></code></pre></li>
+<li><p>介绍你知道的前端模板引擎？</p>
+<pre><code>artTemplate, underscore, handlebars
+</code></pre></li>
+<li><p>什么是 Shim 和 Polyfill？ 区别是什么？ 目标是什么？</p>
+<pre><code>* Shim(垫片)：将一个新的 API 引入到一个旧的环境中，仅靠旧环境中已有的手段实现。
+Shim 有时候也称为 shiv，比如著名的 HTML5 兼容库 html5shiv
+
+* Polyfill：用在浏览器API上的 Shim。在旧版浏览器上复制标准 API(HTML5, CSS3) 的补充。
+通常的做法是先检查当前浏览器是否支持某个API，如果不支持的话就加载对应的 polyfill 进行模拟增强。
+例如：geolocation polyfill 可以在 navigator 对象上添加全局的 geolocation 对象及相应成员。
+
+* 区别：Polyfill 专门用来兼容浏览器，Shim 的范围更大些
+
+* 目标：一旦新的标准API被普遍的支持，可以方便地去掉 Shim(polyfill)，无需做其他额外工作
+</code></pre></li>
+<li><p>什么是 Modernizr？ Modernizr 工作原理？</p>
+<pre><code>* Modernizr 是一个开源的 JavaScript 库，用于检测用户浏览器对 HTML5 与 CSS3 的支持情况
+</code></pre></li>
+<li><p>移动端最小触控区域是多大？</p>
+<pre><code>44 * 44 px  -- 参考《iOS 人机界面指南》
+</code></pre></li>
+<li><p>移动端的点击事件的延迟时间是多长，为什么会有延迟？ 如何解决这个延时？</p>
+<pre><code>* 移动端 click 有 300ms 延迟，浏览器为了区分“双击”（放大页面）还是“单击”而设计
+* 解决方案：
+  - 禁用缩放(对safari无效)
+  - 使用指针事件(IE私有特性，且仅IE10+)
+  - 使用 Zepto 的 tap 事件(有点透BUG)
+  - 使用 FastClick 插件(体积大[压缩后8k])
+</code></pre></li>
+<li><p>Zepto 的点透问题如何解决？</p>
+<pre><code>* 点透问题的由来：
+   Zepto 定义 tap 事件用来消除移动端 click 事件 300ms 延迟现象时产生的新BUG
+* tap 实现原理：
+   记录 touchstart 和 touchend 间隔和手指位置，两者变化较小且未触发 touchmove，即认为是 tap 操作
+* 点透问题表现：
+   点击弹出层关闭按钮（绑定了tap事件）关闭弹出层时，会误触发按钮正下方内容的 click 事件
+* 点透问题原理：
+   事件执行的顺序：touchstart &gt; touchend &gt; click，而 click 事件有300ms的延迟。执行 touchstart 300ms 后触发 click，此时弹出层已消失，click 就被派发到弹出层下面元素身上。
+* 点透问题解决：
+  - 为弹出层加入(300ms+)过渡动画渐进消失
+  - 改用 FastClick 插件
+  - 升级 Zepto 最新版本（如果新版本修复了点透BUG）
+</code></pre></li>
+<li><p>实现页面操作不刷新整页，并且能在浏览器“前进”、“后退”时正确响应？</p>
+<pre><code>方案一（HTML5 历史管理）：
+  1. 每次点击导航菜单，将Ajax请求的URL查询参数(?后面部分)追加到当前地址栏URL后面，并记录到浏览器历史
+      -- 通过 history.pushState 修改地址栏URL，并记录浏览器历史
+  2. “前进”、“后退”操作时，根据地址栏URL查询参数变化，反向发起响应Ajax请求，实现无刷新效果
+      -- 通过 window.onpopstate 事件，监听浏览器的“前进”、“后退”操作
+  3. 页面首次载入的时候，如果没有查询地址或查询地址不匹配，则使用第一个导航菜单的Ajax地址的查询内容
+      -- 使用 history.replaceState 替换地址栏URL和浏览器历史，然后触发Ajax请求
+
+方案二（URL锚点变化）：
+  window.location.hash 属性 + window.onhashchange 事件
+</code></pre></li>
+<li><p>什么是函数式编程？</p>
+<pre><code>* 函数式编程是一种"编程范式"，主要思想是把运算过程尽量写成一系列嵌套的函数调用
+* 例如：var result = subtract(multiply(add(1,2), 3), 4);
+
+* 函数式编程的特点：
+  - 函数核心化：函数可以作为变量的赋值、另一函数的参数、另一函数的返回值
+  - 只用“表达式”，不用“语句”：要求每一步都是单纯的运算，都必须有返回值
+  - 没有"副作用"：所有功能只为返回一个新的值，不修改外部变量
+  - 引用透明：运行不依赖于外部变量，只依赖于输入的参数
+
+* 函数式编程的优点：
+  - 代码简洁，接近自然语言，易于理解
+  - 便于维护，利于测试、除错、组合
+  - 易于“并发编程“，不用担心一个线程的数据，被另一个线程修改
+  - 可“热升级”代码，在运行状态下直接升级代码，不需要重启，也不需要停机
+</code></pre></li>
+<li><p>什么是函数柯里化Currying)？</p>
+<pre><code>* 柯里化：
+ 通常也称部分求值，含义是给函数分步传递参数，每次递参部分应用参数，并返回一个更具体的函数，继续接受剩余参数。
+ 期间会连续返回具体函数，直至返回最后结果。因此，函数柯里化是逐步传参，逐步缩小函数的适用范围，逐步求解的过程。
+
+* 柯里化的作用：延迟计算；参数复用；动态创建函数
+
+* 柯里化的缺点：
+ 函数柯里化会产生开销（函数嵌套，比普通函数占更多内存），但性能瓶颈首先来自其它原因（DOM 操作等）
+</code></pre></li>
+<li><p>什么是面向切面编程（AOP）？</p>
+<pre><code>面向切面的编程（AOP）简单理解：可以在不修改原有代码的情况下，动态添加新功能
+</code></pre></li>
+<li><p>什么是依赖注入？</p>
+<pre><code>* 当一个类的实例依赖另一个类的实例时，自己不创建该实例，由IOC容器创建并注入给自己，因此称为依赖注入。
+* 依赖注入解决的就是如何有效组织代码依赖模块的问题
+</code></pre></li>
+<li><p>面向对象设计的原则？</p>
+<pre><code>* SRP(Single Responsibility) 单一职责原则 -- 每一个类应该专注于做一件事情
+* OCP(Open Close)            开放封闭原则 -- 面向扩展开放，面向修改关闭
+* LSP(Liskov Substitution)   里氏替换原则 -- 子类可以替换基类而不会出现错误和异常
+* DIP(Dependence Inversion)  依赖倒置原则 -- 实现尽量依赖抽象，不依赖具体实现
+* ISP(Interface Segregation) 接口隔离原则 -- 接口应该小而独立，而不是大而全面
+</code></pre></li>
+<li><p>设计模式：什么是 singleton, factory, strategy, decorator？</p>
+<pre><code>* Singleton(单例)   一个类只有唯一实例，这个实例在整个程序中有一个全局的访问点
+* Factory (工厂)    解决实列化对象产生重复的问题
+* Strategy(策略)    将每一个算法封装起来，使它们还可以相互替换，让算法独立于使用
+* Observer(观察者)  多个观察者同时监听一个主体，当主体对象发生改变时，所有观察者都将得到通知
+* Prototype(原型)   一个完全初始化的实例，用于拷贝或者克隆
+* Adapter(适配器)   将不同类的接口进行匹配调整，尽管内部接口不兼容，不同的类还是可以协同工作
+* Proxy(代理模式)   一个充当过滤转发的对象用来代表一个真实的对象
+* Iterator(迭代器)  在不需要直到集合内部工作原理的情况下，顺序访问一个集合里面的元素
+* Chain of Responsibility(职责连)  处理请求组成的对象一条链，请求链中传递，直到有对象可以处理
+</code></pre></li>
+<li><p>什么是前端工程化？</p>
+<pre><code>* 前端工程化就是把一整套前端工作流程使用工具自动化完成
+* 前端开发基本流程：
+  - 项目初始化：yeoman, FIS
+  - 引入依赖包：bower, npm
+  - 模块化管理：npm, browserify, Webpack
+  - 代码编译：babel, sass, less
+  - 代码优化(压缩/合并)：Gulp, Grunt
+  - 代码检查：JSHint, ESLint
+  - 代码测试：Mocha
+* 目前最知名的构建工具：Gulp, Grunt, npm + Webpack
+</code></pre></li>
+<li><p>介绍 Yeoman 是什么？</p>
+<pre><code>* Yeoman --前端开发脚手架工具，自动将最佳实践和工具整合起来构建项目骨架
+* Yeoman 其实是三类工具的合体，三类工具各自独立：
+  - yo --- 脚手架，自动生成工具（相当于一个粘合剂，把 Yeoman 工具粘合在一起）
+  - Grunt、gulp --- 自动化构建工具 （最初只有grunt，之后加入了gulp）
+  - Bower、npm --- 包管理工具 （原来是bower，之后加入了npm）
+</code></pre></li>
+<li><p>介绍 WebPack 是什么？ 有什么优势？</p>
+<pre><code>* WebPack 是一款[模块加载器]兼[打包工具]，用于把各种静态资源（js/css/image等）作为模块来使用
+
+* WebPack 的优势：
+  - WebPack 同时支持 commonJS 和 AMD/CMD，方便代码迁移
+  - 不仅仅能被模块化 JS ，还包括 CSS、Image 等
+  - 能替代部分 grunt/gulp 的工作，如打包、压缩混淆、图片base64
+  - 扩展性强，插件机制完善，特别是支持 React 热插拔的功能
+</code></pre></li>
+<li><p>介绍类库和框架的区别？</p>
+<pre><code>* 类库是一些函数的集合，帮助开发者写WEB应用，起主导作用的是开发者的代码
+* 框架是已实现的特殊WEB应用，开发者只需对它填充具体的业务逻辑，起主导作用是框架
+</code></pre></li>
+<li><p>Underscore 对哪些 JS 原生对象进行了扩展？提供了哪些好用的函数方法？</p>
+<pre><code>Underscore 没有扩展任何JS内置对象，只提供了一套函数式编程的实用功能库
+Underscore 主要针对数组、对象、函数提供更方便的调用，弥补了部分 jQuery 没有实现的功能
+
+Underscore 好用的函数方法(对应ES6)：
+  _.each(array, iteratee)         array.forEach(iteratee)
+  _.map(array, iteratee)          array.map(iteratee)
+  _.find(array, predicate)        array.find(predicate)
+  _.pluck(array, propertyName)    array.map(value =&gt; value[propertyName])
+  _.contains(array, element)      array.includes(element)
+  _.toArray(arguments)            Array.from(arguments)
+  _.compact(array)                array.filter(x =&gt; !!x)
+  _.uniq(array)                   [...new Set(array)]
+  _.indexOf(array, value)         array.indexOf(value)
+  _.keys(object)                  Object.keys(object)
+  _.isArray(object)               Array.isArray(object)
+  _.isFinite(object)              Number.isFinite(object)
+</code></pre></li>
+<li><p>什么是 MVC/MVP/MVVM/Flux？</p>
+<pre><code>* MVC(Model-View-Controller) 
+  - V-&gt;C, C-&gt;M, M-&gt;V
+  - 通信都是单向的；C只起路由作用，业务逻辑都部署在V
+  - Backbone
+
+* MVP(Model-View-Presenter)
+  - V&lt;-&gt;P, P&lt;-&gt;M
+  - 通信都是双向的；V和M不发生联系(通过P传)；V非常薄，逻辑都部署在P
+  - Riot.js
+
+* MVVM(Model-View-ViewModel)
+  - V-&gt;VM, VM&lt;-&gt;M
+  - 采用双向数据绑定：View 和 ViewModel 的变动都会相互映射到对象上面
+  - Angular
+
+* Flux(Dispatcher-Store-View)
+  - Action-&gt;Dispatcher-&gt;Store-&gt;View, View-&gt;Action
+  - Facebook 为了解决在 MVC 应用中碰到的工程性问题提出一个架构思想
+  - 基于一个简单的原则：数据在应用中单向流动（单向数据流）
+  - React(Flux 中 View，只关注表现层)
+</code></pre></li>
+<li><p>Backbone 是什么？</p>
+<pre><code>Backbone 是一个基于 jquery 和 underscore 的前端(MVC)框架
+</code></pre></li>
+<li><p>Riot.js 是什么？</p>
+<pre><code>Riot.js 是一个轻量级（1Kb大小）的前端(MVP)框架。提供了模板引擎、路由、MVP模式。
+Riot.js 是目前存在的 JavaScript 模板引擎中速度最快的（比Underscore的模板快7倍）
+</code></pre></li>
+<li><p>AngularJS 是什么？</p>
+<pre><code>AngularJS 是一个完善的前端 MVVM 框架，包含模板、数据双向绑定、路由、模块化、服务、依赖注入等
+AngularJS 由 Google 维护，用来协助大型单一页面应用开发。
+</code></pre></li>
+<li><p>React 是什么？</p>
+<pre><code>* React 不是 MV* 框架，用于构建用户界面的 JavaScript 库，侧重于 View 层
+
+* React 主要的原理：
+  - 虚拟 DOM + diff 算法 -&gt; 不直接操作 DOM 对象
+  - Components 组件 -&gt; Virtual DOM 的节点
+  - State 触发视图的渲染 -&gt; 单向数据绑定
+
+* React 解决方案：React + Redux + react-router + Fetch + webpack
+</code></pre></li>
+<li><p>react-router 路由系统的实现原理？</p>
+<pre><code>实现原理：location 与 components 之间的同步
+* 路由的职责是保证 UI 和 URL 的同步
+* 在 react-router 中，URL 对应 Location 对象，UI 由 react components 决定
+* 因此，路由在 react-router 中就转变成 location 与 components 之间的同步
+</code></pre></li>
+<li><p>Meteor 是什么？</p>
+<pre><code>Meteor 是一个全栈开发框架，基础构架是 Node.JS + MongoDB，并把延伸到了浏览器端。
+Meteor 统一了服务器端和客户端的数据访问，使开发者可以轻松完成全栈式开发工作。
+</code></pre></li>
+<li><p>jQuery 的实现原理？</p>
+<pre><code>(function(window, undefined) {})(window);
+// jQuery 利用 JS 函数作用域的特性，采用立即调用表达式包裹了自身，解决命名空间和变量污染问题
+
+window.jQuery = window.$ = jQuery;
+// 在闭包当中将 jQuery 和 $ 绑定到 window 上，从而将 jQuery 和 $ 暴露为全局变量
+</code></pre></li>
+<li><p>jQuery.fn 的 init 方法返回的 this 指的是什么对象？ 为什么要返回 this？</p>
+<pre><code>* jQuery.fn 的 init 方法 返回的 this 就是 jQuery 对象
+* 用户使用 jQuery() 或 $() 即可初始化 jQuery 对象，不需要动态的去调用 init 方法
+</code></pre></li>
+<li><p>jQuery.extend 与 jQuery.fn.extend 的区别？</p>
+<pre><code>* $.fn.extend() 和 $.extend() 是 jQuery 为扩展插件提拱了两个方法
+
+* $.extend(object); // 为jQuery添加“静态方法”（工具方法）
+
+      $.extend({
+      　　min: function(a, b) { return a &lt; b ? a : b; },
+      　　max: function(a, b) { return a &gt; b ? a : b; }
+      });
+      $.min(2,3); //  2
+      $.max(4,5); //  5
+
+* $.extend([true,] targetObject, object1[, object2]); // 对targt对象进行扩展
+
+      var settings = {validate:false, limit:5};
+      var options = {validate:true, name:"bar"};
+      $.extend(settings, options);  // 注意：不支持第一个参数传 false
+      // settings == {validate:true, limit:5, name:"bar"}
+
+* $.fn.extend(json); // 为jQuery添加“成员函数”（实例方法）
+
+      $.fn.extend({
+         alertValue: function() {
+            $(this).click(function(){
+              alert($(this).val());
+            });
+         }
+      });
+
+      $("#email").alertValue();
+</code></pre></li>
+<li><p>jQuery 的属性拷贝(extend)的实现原理是什么，如何实现深拷贝？</p>
+<pre><code>- 浅拷贝（只复制一份原始对象的引用）
+`var newObject = $.extend({}, oldObject);`
+
+- 深拷贝（对原始对象属性所引用的对象进行进行递归拷贝）
+`var newObject = $.extend(true, {}, oldObject);`</code></pre></li>
+<li><p>jQuery 的队列是如何实现的？队列可以用在哪些地方？</p>
+<pre><code>* jQuery 核心中有一组队列控制方法，由 queue()/dequeue()/clearQueue() 三个方法组成。
+* 主要应用于 animate()，ajax，其他要按时间顺序执行的事件中
 ​```javascript
-  function extend(Child, Parent) {
-      var F = function(){};
-    　F.prototype = Parent.prototype;
-    　Child.prototype = new F();
-    　Child.prototype.constructor = Child;
-    　Child.uber = Parent.prototype;
-  }
-​```
-5. ES6 语法糖 extends：class ColorPoint extends Point {}
-​```javascript
-  class ColorPoint extends Point {
-     constructor(x, y, color) {
-        super(x, y); // 调用父类的constructor(x, y)
-        this.color = color;
-     }
-     toString() {
-        return this.color + ' ' + super.toString(); // 调用父类的toString()
-     }
-  }
+  var func1 = function(){alert('事件1');}
+  var func2 = function(){alert('事件2');}
+  var func3 = function(){alert('事件3');}
+  var func4 = function(){alert('事件4');}
+
+  // 入栈队列事件
+  $('#box').queue("queue1", func1);  // push func1 to queue1
+  $('#box').queue("queue1", func2);  // push func2 to queue1
+
+  // 替换队列事件
+  $('#box').queue("queue1", []);  // delete queue1 with empty array
+  $('#box').queue("queue1", [func3, func4]);  // replace queue1
+
+  // 获取队列事件（返回一个函数数组）
+  $('#box').queue("queue1");  // [func3(), func4()]
+
+  // 出栈队列事件并执行
+  $('#box').dequeue("queue1"); // return func3 and do func3
+  $('#box').dequeue("queue1"); // return func4 and do func4
+
+  // 清空整个队列
+  $('#box').clearQueue("queue1"); // delete queue1 with clearQueue
 ​```</code></pre></li>
-<li><p>Javascript作用链域?</p>
-<pre><code>* 全局函数无法查看局部函数的内部细节，但局部函数可以查看其上层的函数细节，直至全局细节。
-* 如果当前作用域没有找到属性或方法，会向上层作用域查找，直至全局函数，这种形式就是作用域链。</code></pre></li>
-<li><p>谈谈this对象的理解。</p>
-<pre><code>* this 总是指向函数的直接调用者
-* 如果有 new 关键字，this 指向 new 出来的实例对象
-* 在事件中，this指向触发这个事件的对象
-* IE下 attachEvent 中的this总是指向全局对象Window</code></pre></li>
-<li><p>eval是做什么的？</p>
-<pre><code>* eval的功能是把对应的字符串解析成JS代码并运行
-* 应该避免使用eval，不安全，非常耗性能（先解析成js语句，再执行）
-* 由JSON字符串转换为JSON对象的时候可以用 eval('('+ str +')');</code></pre></li>
-<li><p>什么是 Window 对象? 什么是 Document 对象?</p>
-<pre><code>Window 对象表示当前浏览器的窗口，是JavaScript的顶级对象。
-我们创建的所有对象、函数、变量都是 Window 对象的成员。
-Window 对象的方法和属性是在全局范围内有效的。
+<li><p>jQuery 中的 bind(), live(), delegate(), on()的区别？</p>
+<pre><code>* bind 直接绑定在目标元素上
+* live 通过冒泡传播事件，默认document上，支持动态数据
+* delegate 更精确的小范围使用事件代理，性能优于 live
+* on 是最新的1.9版本整合了之前的三种方式的新事件绑定机制</code></pre></li>
+<li><p>是否知道自定义事件？ jQuery 里的 fire 函数是什么意思，什么时候用？</p>
+<pre><code>* 事件即“发布/订阅”模式，自定义事件即“消息发布”，事件的监听即“订阅订阅”
 
-Document 对象是 HTML 文档的根节点与所有其他节点（元素节点，文本节点，属性节点, 注释节点）。
-Document 对象使我们可以通过脚本对 HTML 页面中的所有元素进行访问。
-Document 对象是 Window 对象的一部分，可通过 window.document 属性对其进行访问。</code></pre></li>
-<li><p>null 与 undefined 的区别？</p>
-<pre><code>* null 表示"没有对象"，即该处不应该有值。典型用法：
-  - 作为函数的参数，表示该函数的参数不是对象
-  - 作为对象原型链的终点
-
-* undefined 表示"缺少值"，就是此处应该有一个值，但是还没有定义。典型用法：
-  - 变量被声明了，但没有赋值时，就等于 undefined
-  - 调用函数时，应该提供的参数没有提供，该参数等于 undefined
-  - 对象没有赋值的属性，该属性的值为 undefined
-  - 函数没有返回值时，默认返回 undefined
-</code></pre></li>
-<li><p>介绍 DOM 的发展。</p>
-<pre><code>DOM：文档对象模型（Document Object Model），定义了访问HTML和XML文档的标准，与编程语言及平台无关
-DOM0：提供了查询和操作Web文档的内容API。未形成标准，实现混乱。如：document.forms['login']
-DOM1：W3C提出标准化的DOM，简化了对文档中任意部分的访问和操作。如：JavaScript中的Document对象
-DOM2：原来DOM基础上扩充了鼠标事件等细分模块，增加了对CSS的支持。如：getComputedStyle(elem, pseudo)
-DOM3：增加了XPath模块和加载与保存（Load and Save）模块。如：XPathEvaluator
-</code></pre></li>
-<li><p>介绍DOM0，DOM2，DOM3事件处理方式区别。</p>
-<pre><code>DOM0级事件处理方式：
-    btn.onclick = func;
-    btn.onclick = null;
-DOM2级事件处理方式：
-    btn.addEventListener('click', func, false);
-    btn.removeEventListener('click', func, false);
-    btn.attachEvent("onclick", func);
-    btn.detachEvent("onclick", func);
-DOM3级事件处理方式：
-    eventUtil.addListener(input, "textInput", func);
-    // eventUtil 是自定义对象，textInput 是DOM3级事件</code></pre></li>
-<li><p>事件的三个阶段</p>
-<pre><code>捕获、目标、冒泡</code></pre></li>
-<li><p>介绍事件“捕获”和“冒泡”执行顺序和事件的执行次数？</p>
-<pre><code>* 按照W3C标准的事件：首是进入捕获阶段，直到达到目标元素，再进入冒泡阶段
-
-* 事件执行次数（DOM2-addEventListener）：元素上绑定事件的个数
-  - 注意1：前提是事件被确实触发
-  - 注意2：事件绑定几次就算几个事件，即使类型和功能完全一样也不会“覆盖”
-
-* 事件执行顺序：判断的关键是否目标元素
-  - 非目标元素：根据W3C的标准执行：捕获-&gt;目标元素-&gt;冒泡（不依据事件绑定顺序）
-  - 目标元素：依据事件绑定顺序：先绑定的事件先执行（不依据捕获冒泡标准）
-  - 最终顺序：父元素捕获-&gt;目标元素事件1-&gt;目标元素事件2-&gt;子元素捕获-&gt;子元素冒泡-&gt;父元素冒泡
-     注意：子元素事件执行前提 -- 事件确实“落”到子元素布局区域上，而不是简单的具有嵌套关系</code></pre></li>
-<li><p>在一个DOM上同时绑定两个点击事件：一个用捕获，一个用冒泡。事件会执行几次，先执行冒泡还是捕获？</p>
-<pre><code>* 该DOM上的事件如果被触发，会执行两次（执行次数等于绑定次数）
-* 如果该DOM是目标元素，则按事件绑定顺序执行，不区分冒泡/捕获
-* 如果该DOM是处于事件流中的非目标元素，则先执行捕获，后执行冒泡</code></pre></li>
-<li><p>什么是事件委托（代理），有什么优缺点？</p>
-<pre><code>* 事件委托是指将事件绑定目标元素的到父元素上，利用冒泡机制触发该事件
-* 优点：
-  - 可以减少事件注册，节省大量内存占用
-  - 可以将事件应用于动态添加的子元素上
-* 缺点：
-  使用不当会造成事件在不应该触发时触发
-* 示例：
-  ulEl.addEventListener('click', function(e){
-      var target = event.target || event.srcElement;
-      if(!!target &amp;&amp; target.nodeName.toUpperCase() === "LI"){
-          console.log(target.innerHTML);
-      }
-  }, false);</code></pre></li>
-<li><p>IE与火狐的事件机制有什么区别？ 如何阻止冒泡？</p>
-<pre><code>* IE只事件冒泡，不支持事件捕获；火狐同时支持件冒泡和事件捕获</code></pre></li>
-<li><p>IE的事件处理和W3C的事件处理有哪些区别？</p>
-<pre><code>* 绑定事件
-  - W3C: targetEl.addEventListener('click', handler, false);
-  - IE: targetEl.attachEvent('onclick', handler);
-
-* 删除事件
-  - W3C: targetEl.removeEventListener('click', handler, false);
-  - IE: targetEl.detachEvent(event, handler);
-
-* 事件对象
-  - W3C: var e = arguments.callee.caller.arguments[0]
-  - IE: window.event
-
-* 事件目标
-  - W3C: e.target
-  - IE: window.event.srcElement
-
-* 阻止事件默认行为
-  - W3C: window.event.cancelBubble = true
-  - IE: window.event.returnValue = false
-
-* 阻止事件传播
-  - W3C: e.stopPropagation()
-  - IE: window.event</code></pre></li>
-<li><p>W3C事件的 target 与 currentTarget 的区别？</p>
-<pre><code>* target 只会出现在事件流的目标阶段
-* currentTarget 可能出现在事件流的任何阶段
-* 当事件流处在目标阶段时，二者的指向相同
-* 当事件流处于捕获或冒泡阶段时：currentTarget 指向当前事件活动的对象(一般为父级)</code></pre></li>
-<li><p>如何派发事件(dispatchEvent)？（如何进行事件广播？）</p>
-<pre><code>* W3C: 使用 dispatchEvent 方法
-* IE: 使用 fireEvent 方法
+* JS 原生支持自定义事件，示例：
 ​```javascript
-  var fireEvent = function(element, event){
-      if (document.createEventObject){
-          var mockEvent = document.createEventObject();
-          return element.fireEvent('on' + event, mockEvent)
-      }else{
-          var mockEvent = document.createEvent('HTMLEvents');
-          mockEvent.initEvent(event, true, true);
-          return !element.dispatchEvent(mockEvent);
-      }
-  }
-​```</code></pre></li>
-<li><p>什么是函数节流？介绍一下应用场景和原理？</p>
-<pre><code>* 函数节流(throttle)是指阻止一个函数在很短时间间隔内连续调用。
-只有当上一次函数执行后达到规定的时间间隔，才能进行下一次调用。
-但要保证一个累计最小调用间隔（否则拖拽类的节流都将无连续效果）
-
-* 函数节流用于 onresize, onscroll 等短时间内会多次触发的事件
-
-* 函数节流的原理：使用定时器做时间节流。
-当触发一个事件时，先用 setTimout 让这个事件延迟一小段时间再执行。
-如果在这个时间间隔内又触发了事件，就 clearTimeout 原来的定时器，
-再 setTimeout 一个新的定时器重复以上流程。
-
-* 函数节流简单实现：
-​```javascript
-  function throttle(method, context) {
-       clearTimeout(methor.tId);
-       method.tId = setTimeout(function(){
-           method.call(context);
-       }， 100); // 两次调用至少间隔 100ms
-  }
-  // 调用
-  window.onresize = function(){
-      throttle(myFunc, window);
-  }
-​```</code></pre></li>
-<li><p>区分什么是“客户区坐标”、“页面坐标”、“屏幕坐标”？</p>
-<pre><code>* 客户区坐标：鼠标指针在可视区中的水平坐标(clientX)和垂直坐标(clientY)
-* 页面坐标：鼠标指针在页面布局中的水平坐标(pageX)和垂直坐标(pageY)
-* 屏幕坐标：设备物理屏幕的水平坐标(screenX)和垂直坐标(screenY)</code></pre></li>
-<li><p>如何获得一个DOM元素的绝对位置？</p>
-<pre><code>* elem.offsetLeft：返回元素相对于其定位父级左侧的距离
-* elem.offsetTop：返回元素相对于其定位父级顶部的距离
-* elem.getBoundingClientRect()：返回一个DOMRect对象，包含一组描述边框的只读属性，单位像素</code></pre></li>
-<li><p>分析 [‘1’, ‘2’, ‘3’].map(parseInt) 答案是多少？</p>
-<pre><code>答案:[1, NaN, NaN]
-
-* parseInt(string, radix) 第2个参数 radix 表示进制。省略 radix 或 radix = 0，则数字将以十进制解析。
-* map 每次为 parseInt 传3个参数(elem, index, array)，其中 index 为数组索引。
-  因此，map 遍历 ["1", "2", "3"]，相应 parseInt 接收参数如下：
-
-  parseInt('1', 0);  // 1
-  parseInt('2', 1);  // NaN
-  parseInt('3', 2);  // NaN
-
-  所以，parseInt 参数 radix 不合法，导致返回值为 NaN</code></pre></li>
-<li><p>什么是闭包（closure），为什么要用闭包？</p>
-<pre><code>* 闭包是位于一个函数内的函数，该内层函数可以访问到其所在外层函数的局部变量，并将其暴露到函数外。
-* 由于在函数外保持对内层函数的引用，内层函数不会被垃圾回收。
-* 闭包的作用：
- 1.取得函数内部的局部变量
- 2.在内存中维持一个变量</code></pre></li>
-<li><p>JavaScript 代码中的 “use strict” 是什么？ 使用后区别有哪些？</p>
-<pre><code>* "use strict" 是 EC5 引入的运行模式，要求 JS 在更严格的条件下运行
-  目的是消除 JS 语法的一些不合理、不严谨之处，保证代码更加安全、高效的运行
-
-* "严格模式"对Javascript的语法和行为，都做了一些改变：
-* 变量都必须先用 var 命令声明
-* 函数必须声明在顶层
-* 禁止使用with语句
-* 禁止this关键字指向全局对象
-* arguments.caller, arguments.callee 被禁用
-* delete 禁止删除变量(会报错)，只能删除对象属性(configurable=true，否则会报错)
-* 试图修改对象的只读属性、在不可扩展的对象上添加属性，会报错
-* 对象不能有重名的属性，函数不能有重名的参数
-* 禁止八进制字面量，如 010 表示 八进制的 8
-* 为eval单独创建作用域，eval不再能生成全局变量
-* 不允许对arguments赋值
-* eval, arguments变为关键字，不可作为变量名、函数名等
-* 新增保留字：implements、interface、let、package、private、protected、public、static、yield</code></pre></li>
-<li><p>如何判断一个对象是否属于某个类？</p>
-<pre><code>使用 instanceof 运算符：foo instanceof Foo;</code></pre></li>
-<li><p>new 操作符具体干了什么？</p>
-<pre><code>1. 创建实例对象，this 变量引用该对象，同时还继承了构造函数的原型
-2. 属性和方法被加入到 this 引用的对象中
-3. 新创建的对象由 this 所引用，并且最后隐式的返回 this</code></pre></li>
-<li><p>用原生JavaScript的实现过什么功能吗？</p>
-<pre><code>封装选择器、调用第三方API、设置和获取样式</code></pre></li>
-<li><p>Javascript中有一个函数，执行对象属性查找时永远不会去原型链上查找，这个函数是什么？</p>
-<pre><code>hasOwnProperty 函数判断一个对象自身是否具有指定属性，不会去原型链上查找
-* 用法：var bool = obj.hasOwnProperty(prop);</code></pre></li>
-<li><p>介绍对 JSON 的了解？</p>
-<pre><code>* JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式
-
-* JSON 语法规则：
- 1. 数据用键值对表示，逗号分隔
- 2. 花括号保存对象，方括号保存数组
-
-* JSON字符串转换为JSON对象:
- var obj = eval('('+ str +')');
- var obj = str.parseJSON();
- var obj = JSON.parse(str);
-
-* JSON对象转换为JSON字符串：
- var str = obj.toJSONString();
- var str = JSON.stringify(obj);</code></pre></li>
-<li><p>解释一下这段代码的意思吗？</p>
-<pre><code>​```javascript
-[].forEach.call($$("*"), function(el){
-    el.style.outline = "1px solid #" + (~~(Math.random()*(1&lt;&lt;24))).toString(16);
-})
+  document.createEvent(type); // 创建事件
+  event.initEvent(eventType, canBubble, prevent); // 初始化事件
+  target.addEventListener('dataavailable', handler, false); // 监听事件
+  target.dispatchEvent(e);  // 触发事件
 ​```
-解释：获取页面所有的元素，遍历这些元素，为它们添加1像素随机颜色的轮廓(outline)
 
-1. `$$(sel)` // $$函数被许多现代浏览器命令行支持，等价于 document.querySelectorAll(sel)
-2. `[].forEach.call(NodeLists)` // 使用 call 函数将数组遍历函数 forEach 应到节点元素列表
-3. `el.style.outline = "1px solid #333"` // 样式 outline 位于盒模型之外，不影响元素布局位置
-4. `(1&lt;&lt;24)` // parseInt("ffffff", 16) == 16777215 == 2^24 - 1 // 1&lt;&lt;24 == 2^24 == 16777216
-5. `Math.random()*(1&lt;&lt;24)` // 表示一个位于 0 到 16777216 之间的随机浮点数
-6. `~~Math.random()*(1&lt;&lt;24)` // `~~` 作用相当于 parseInt 取整
-7. `(~~(Math.random()*(1&lt;&lt;24))).toString(16)` // 转换为一个十六进制数色值
+* jQuery 里的 fire 函数用于调用 jQuery 自定义事件列表中的事件
 </code></pre></li>
-<li><p>什么是 Ajax? 如何创建一个Ajax？</p>
-<pre><code>* AJAX(Asynchronous Javascript And XML) = 异步 JavaScript + XML 在后台与服务器进行异步数据交换，不用重载整个网页，实现局部刷新。
+<li><p>jQuery 通过哪个方法和 Sizzle 选择器结合的？</p>
+<pre><code>* Sizzle 选择器采取 Right To Left 的匹配模式，先搜寻所有匹配标签，再判断它的父节点
+* jQuery 通过 $(selecter).find(selecter); 和 Sizzle 选择器结合
+</code></pre></li>
+<li><p>jQuery 中如何将数组转化为 JSON 字符串，然后再转化回来？</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// 通过原生 JSON.stringify/JSON.parse 扩展 jQuery 实现</span>
+ $<span class="token punctuation">.</span>array2json <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
 
-* 创建 ajax 步骤：
-</code></pre><pre><code>   1.创建 XMLHttpRequest 对象
-   2.创建一个新的 HTTP 请求，并指定该 HTTP 请求的类型、验证信息
-   3.设置响应 HTTP 请求状态变化的回调函数
-   4.发送 HTTP 请求
-   5.获取异步调用返回的数据
-   6.使用 JavaScript 和 DOM 实现局部刷新</code></pre><pre><code>javascript```
-  var xhr = new XMLHttpRequest();
-  xhr.open("POST", url, true);
-  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xhr.onreadystatechange = function () {
-      if (xhr.readyState == 4 &amp;&amp; (xhr.status == 200 || xhr.status == 304)) {
-          fn.call(this, xhr.responseText);
-      }
-  };
-  xhr.send(data);
-​```
-</code></pre></li>
-<li><p>同步和异步的区别？</p>
-<pre><code>* 同步：同一时刻只能完成一项任务。如果有多个任务，必须按先后顺序排队执行，因此任务执行是阻塞的
-* 异步：同一时刻能够完成多项任务。后面任务不必等前面任务结束就执行，因此任务执行是无序非阻塞的
-</code></pre></li>
-<li><p>JavaScript实现异步编程的方法？</p>
-<pre><code>* 回调函数
-* 事件监听
-* 发布/订阅
-* Promises对象
-* Async函数[ES7]
-</code></pre></li>
-<li><p>什么是 Cookie 隔离？（请求资源的时候不携带cookie怎么做？）</p>
-<pre><code>如果静态文件放在主域名下，请求静态文件时携带cookie数据，并提交到服务器，非常浪费流量和响应时间。
-cookie是有域的限制，不能跨域提交请求。因此，使用非主域名时，请求头中就不会带有cookie数据。
-Cookie 隔离可以减小请求头的体积，使web服务器省去对cookie的处理分析环节，提高了对请求的响应速度。
-</code></pre></li>
-<li><p>如何解决跨域问题?</p>
-<pre><code>* document.domain + iframe：要求主域名相同 //只能跨子域
-* JSONP(JSON with Padding)：response: callback(data) //只支持 GET 请求
-* 跨域资源共享CORS(XHR2)：Access-Control-Allow //兼容性 IE10+
-* 跨文档消息传输(HTML5)：postMessage + onmessage  //兼容性 IE8+
-* WebSocket(HTML5)：new WebSocket(url) + onmessage //兼容性 IE10+
-* 服务器端设置代理请求：服务器端不受同源策略限制
-</code></pre></li>
-<li><p>HTTP/2 与 HTTP/1.x 的关键区别</p>
-<pre><code>* 二进制协议代替文本协议，更加简洁高效
-* 针对每个域只使用一个多路复用的连接
-* 压缩头部信息减小开销
-* 允许服务器主动推送应答到客户端的缓存中
-</code></pre></li>
-<li><p>页面编码和被请求的资源编码如果不一致如何处理？</p>
-<pre><code>* 后端响应头设置 charset
-* 前端页面`&lt;meta&gt;`设置 charset
-</code></pre></li>
-<li><p>把<code>&lt;script&gt;</code>放在<code>&lt;/body&gt;</code>之前和之后有什么区别？浏览器会如何解析它们？</p>
-<pre><code>* 按照HTML标准，在`&lt;/body&gt;`结束后出现`&lt;script&gt;`或任何元素的开始标签，都是解析错误。
-  虽然不符合HTML标准，但浏览器会自动容错，使实际效果与写在`&lt;/body&gt;`之前没有区别
+ $<span class="token punctuation">.</span>json2array <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// $.parseJSON(array); // 3.0 开始，已过时</span>
+    <span class="token keyword">return</span> JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
 
-* 浏览器的容错机制会忽略&lt;script&gt;之前的`&lt;/body&gt;`，视作`&lt;script&gt;`仍在 body 体内。
-  省略`&lt;/body&gt;`和`&lt;/html&gt;`闭合标签符合HTML标准，服务器可以利用这一标准尽可能少输出内容
-</code></pre></li>
-<li><p>延迟加载JS的方式有哪些？</p>
-<pre><code>* 设置`&lt;script&gt;`属性 defer="defer" （脚本将在页面完成解析时执行）
-* 动态创建 script DOM：document.createElement('script');
-* XmlHttpRequest 脚本注入
-* 延迟加载工具 LazyLoad
-</code></pre></li>
-<li><p>异步加载JS的方式有哪些？</p>
-<pre><code>* 设置`&lt;script&gt;`属性 async="async" （一旦脚本可用，则会异步执行）
-* 动态创建 script DOM：document.createElement('script');
-* XmlHttpRequest 脚本注入
-* 异步加载库 LABjs
-* 模块加载器 Sea.js
-</code></pre></li>
-<li><p>前端性能优化最佳实践？</p>
-<pre><code>* 性能评级工具（PageSpeed 或 YSlow）
-* 合理设置 HTTP 缓存：Expires 与 Cache-control
-* 静态资源打包，开启 Gzip 压缩（节省响应流量）
-* CSS3 模拟图像，图标base64（降低请求数）
-* 模块延迟(defer)加载/异步(async)加载
-* Cookie 隔离（节省请求流量）
-* localStorage（本地存储）
-* 使用 CDN 加速（访问最近服务器）
-* 启用 HTTP/2（多路复用，并行加载）
-* 前端自动化（gulp/webpack）
-</code></pre></li>
-<li><p>什么是 Promise ？</p>
-<pre><code>* Promise 就是一个对象，用来表示并传递异步操作的最终结果
-* Promise 最主要的交互方式：将回调函数传入 then 方法来获得最终结果或出错原因
-* Promise 代码书写上的表现：以“链式调用”代替回调函数层层嵌套（回调地狱）
-</code></pre></li>
-<li><p>documen.write 和 innerHTML 的区别？</p>
-<ul>
-<li>document.write 将内容写入页面的内容流，会导致整个页面重绘<ul>
-<li>elem.innerHTML 将内容写入特定DOM节点，只重绘页面的某一部分</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>JS的DOM操作：添加、移除、移动、复制、创建和查找节点?</p>
-<ul>
-<li>创建新节点<br>document.createElement()          //创建一个具体的元素<pre><code>    document.createTextNode()         //创建一个文本节点
-    document.createDocumentFragment() //创建一个DOM片段</code></pre><ul>
-<li>复制、添加、移除、替换、插入节点<br>element.cloneNode()<pre><code>    element.appendChild()
-    element.removeChild()
-    element.replaceChild()
-    element.insertBefore() //在已有的子节点前插入新子节点</code></pre><ul>
-<li>查找节点<br>document.getElementsByTagName()<pre><code>    document.getElementById()
-    document.querySelector()
-    document.querySelectorall()</code></pre></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>JavaScript 中，调用函数有哪几种方式？</p>
-<pre><code>* 方法调用模式          Foo.foo(arg1, arg2);
-* 函数调用模式          foo(arg1, arg2);
-* 构造器调用模式        (new Foo())(arg1, arg2);
-* call/applay调用模式   Foo.foo.call(that, arg1, arg2);
-* bind调用模式          Foo.foo.bind(that)(arg1, arg2)();
-</code></pre></li>
-<li><p>func.call() 和 func.apply() 的区别？</p>
-<pre><code>接收的参数类型和数量不同：
-- func.apply(that, [arg1, arg2, argn])
-- func.call(that, arg1, arg2, argn)
-</code></pre></li>
-<li><p>func.bind() 与 func.call()有什么不同？</p>
-<pre><code>* 应用的场景不同：
-  - bind: 用当前对象绑定函数内部的 this 指向，返回新的函数
-  - call: 使当前对象借用执行其他对象的函数，返回执行结果
-
-* 下面执行结果一致：
-
-    var add = (a, b) =&gt; a + b;
-    add.call(null, 1, 2);
-
-    add.bind(null, 1, 2)();
-    add.bind(null, 1)(2);
-    add.bind(null)(1, 2);
-</code></pre></li>
-<li><p>简单实现 Function.bind 函数？</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript">    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>Function<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>bind<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      Function<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>bind <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>that<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">var</span> func <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">,</span> args <span class="token operator">=</span> arguments<span class="token punctuation">;</span>
-        <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          <span class="token keyword">return</span> func<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>that<span class="token punctuation">,</span> Array<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>slice<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>args<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-    <span class="token comment" spellcheck="true">// 只支持 bind 阶段的默认参数：</span>
-    func<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span>that<span class="token punctuation">,</span> arg1<span class="token punctuation">,</span> arg2<span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token comment" spellcheck="true">// 不支持以下调用阶段传入的参数：</span>
-    func<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span>that<span class="token punctuation">)</span><span class="token punctuation">(</span>arg1<span class="token punctuation">,</span> arg2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token comment" spellcheck="true">// 调用</span>
+ <span class="token keyword">var</span> json <span class="token operator">=</span> $<span class="token punctuation">.</span><span class="token function">array2json</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token keyword">var</span> array <span class="token operator">=</span> $<span class="token punctuation">.</span><span class="token function">json2array</span><span class="token punctuation">(</span>json<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
-<li><p>列举一下JavaScript数组和对象有哪些原生方法？</p>
-<pre><code>* 数组：
-arr.concat(arr1, arr2, arrn);
-arr.join(",");
-arr.sort(func);
-arr.pop();
-arr.push(e1, e2, en);
-arr.shift();
-unshift(e1, e2, en);
-arr.reverse();
-arr.slice(start, end);                  // 获取数组指定范围的元素
-arr.splice(index, count, e1, e2, en);   // 修改数组指定范围的元素
-arr.indexOf(el);
-arr.includes(el);   // ES6
+<li><p>jQuery 一个对象可以同时绑定多个事件，这是如何实现的？</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#btn"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">"mouseover mouseout"</span><span class="token punctuation">,</span> func<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-* 对象：
-object.hasOwnProperty(prop);            //对象自身中是否存在指定属性
-object.propertyIsEnumerable(prop);      //属性能否用for-in循环枚举
-object.valueOf();                       //对象的原始值
-object.toString();                      //对象字符串表示示
-object.toLocaleString();                //对象的字符串表示(与地区和环境对应)
-Class.prototype.isPropertyOf(object);   //是否是方法调用者的原型对象
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#btn"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        mouseover<span class="token punctuation">:</span> func1<span class="token punctuation">,</span>
+        mouseout<span class="token punctuation">:</span> func2<span class="token punctuation">,</span>
+        click<span class="token punctuation">:</span> func3
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>针对 jQuery 的优化方法？</p>
+<pre><code>* 缓存频繁操作DOM对象
+* 尽量使用id选择器代替class选择器
+* 总是从#id选择器来继承
+* 尽量使用链式操作
+* 使用时间委托 on 绑定事件
+* 采用jQuery的内部函数data()来存储数据
+* 使用最新版本的 jQuery
 </code></pre></li>
-<li><p>Array.splice() 与 Array.splice() 的区别？</p>
-<pre><code>* slice -- “读取”数组指定的元素，不会对原数组进行修改
- 语法：arr.slice(start, end)
-  * start 指定选取开始位置（含）
-  * end 指定选取结束位置（不含）
-
-* splice -- “操作”数组指定的元素，会修改原数组，返回被删除的元素
- 语法：arr.splice(index, count, [insert Elements])
- * index 是操作的起始位置
- * count = 0 插入元素，count &gt; 0 删除元素
- * [insert Elements] 向数组新插入的元素
-
-* 示例
-  // Array.splice() -- 获取数组指定元素
-  ['A', 'B', 'C', 'D'].slice(1, 3);         // return ['B', 'C']
-
-  // Array.splice() -- 插入、删除、替换 元素
-  ['A', 'B', 'C'].splice(2, 0, 'D');       // ['A', 'B', 'D', 'C'] // return null
-  ['A', 'B', 'C'].splice(1, 1);            // ['A', 'C']           // return ['B']
-  ['A', 'B', 'C'].splice(1, 2, 'X', 'Y');  // ['A', 'X', 'Y']      // return ['B', 'C']
+<li><p>jQuery 的 slideUp 动画，当鼠标快速连续触发, 动画会滞后反复执行，该如何处理呢?</p>
+<pre><code>* 在触发元素上的事件设置为延迟处理：使用 JS 原生 setTimeout 方法
+* 在触发元素的事件时预先停止所有的动画，再执行相应的动画事件：$('.tab').stop().slideUp();
 </code></pre></li>
-<li><p>JavaScript 对象生命周期的理解？</p>
-<pre><code>* 当创建一个对象时，JavaScript 会自动为该对象分配适当的内存
-* 垃圾回收器定期扫描对象，并计算引用了该对象的其他对象的数量
-* 如果被引用数量为 0，或惟一引用是循环的，那么该对象的内存即可回收
-</code></pre></li>
-<li><p>哪些操作会造成内存泄漏？</p>
-<pre><code>JavaScript 内存泄露指对象在不需要使用它时仍然存在，导致占用的内存不能使用或回收
+<li><p>jQuery UI 如何自定义组件？</p>
+<pre><code>通过向 $.widget() 传递组件名称和一个原型对象来完成
 
-* JavaScript 中会造成内存泄漏的操作：
-  - 未使用 var 声明的全局变量
-  - 闭包函数(Closures)
-  - 循环引用(两个对象相互引用)
-  - 控制台日志(console.log)
-  - 移除存在绑定事件的DOM元素(IE)
+`$.widget("ns.widgetName", [baseWidget], widgetPrototype);`
+</code></pre></li>
+<li><p>jQuery 与 jQuery UI、jQuery Mobile 区别？</p>
+<pre><code>* jQuery 是 JS 库，兼容各种PC浏览器，主要用作更方便地处理 DOM、事件、动画、AJAX
+
+* jQuery UI 是建立在 jQuery 库上的一组用户界面交互、特效、小部件及主题
+
+* jQuery Mobile 以 jQuery 为基础，用于创建“移动Web应用”的框架
+</code></pre></li>
+<li><p>jQuery 和 Zepto 的区别？ 各自的使用场景？</p>
+<pre><code>* jQuery 主要目标是PC的网页中，兼容全部主流浏览器。在移动设备方面，单独推出 jQuery Mobile
+* Zepto 从一开始就定位移动设备，相对更轻量级。它的 API 基本兼容 jQuery，但对PC浏览器兼容不理想
 </code></pre></li>
 </ul>
-<h3 id="ECMAScript6-相关"><a href="#ECMAScript6-相关" class="headerlink" title="ECMAScript6 相关"></a>ECMAScript6 相关</h3><ul>
-<li><p>谈一谈你了解ECMAScript6的新特性？</p>
-<pre><code>* 块级作用区域              let a = 1;
-* 可定义常量                const PI = 3.141592654;
-* 变量解构赋值              var [a, b, c] = [1, 2, 3];
-* 字符串的扩展(模板字符串)   var sum = `${a + b}`;
-* 数组的扩展(转换数组类型)   Array.from($('li'));
-* 函数的扩展(扩展运算符)     [1, 2].push(...[3, 4, 5]);
-* 对象的扩展(同值相等算法)    Object.is(NaN, NaN);
-* 新增数据类型(Symbol)      let uid = Symbol('uid');
-* 新增数据结构(Map)         let set = new Set([1, 2, 2, 3]);
-* for...of循环            for(let val of arr){};
-* Promise对象             var promise = new Promise(func);
-* Generator函数           function* foo(x){yield x; return x*x;}
-* 引入Class(类)           class Foo {}
-* 引入模块体系             export default func;
-* 引入async函数[ES7]      async function asyncPrint(value, ms) {
-                            await timeout(ms);
-                            console.log(value)
-                           }
-</code></pre></li>
-<li><p>Object.is() 与原来的比较操作符 ===、== 的区别？</p>
-<pre><code>1. == 相等运算符，比较时会自动进行数据类型转换
-2. === 严格相等运算符，比较时不进行隐式类型转换
-3. Object.is 同值相等算法，在 === 基础上对 0 和 NaN 特别处理
+<h2 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h2><ul>
+<li><p>页面重构怎么操作？</p>
+<pre><code>* 网站重构：不改变UI的情况下，对网站进行优化，在扩展的同时保持一致的UI。
 
- +0 === -0 //true
- NaN === NaN // false
-
- Object.is(+0, -0) // false
- Object.is(NaN, NaN) // true
+* 页面重构可以考虑的方面：
+  - 升级第三方依赖
+  - 使用HTML5、CSS3、ES6 新特性
+  - 加入响应式布局
+  - 统一代码风格规范
+  - 减少代码间的耦合
+  - 压缩/合并静态资源
+  - 程序的性能优化
+  - 采用CDN来加速资源加载
+  - 对于JS DOM的优化
+  - HTTP服务器的文件缓存
 </code></pre></li>
-<li><p>什么是 Babel ？</p>
-<pre><code>* Babel 是一个 JS 编译器，自带一组 ES6 语法转化器，用于转化 JS 代码。
-这些转化器让开发者提前使用最新的 JS语法(ES6/ES7)，而不用等浏览器全部兼容。
-* Babel 默认只转换新的 JS 句法(syntax)，而不转换新的API。
-如：Iterator、Generator、Set、Maps、Proxy、Reflect、Symbol、Promise等全局对象以及一些定义在全局对象上的方法(比如Object.assign)
-* 如果运行新的 API 和 新的方法，须使用 babel-polyfill，为当前环境提供一个垫片。
-* Babel 6.0 开始，不再直接提供浏览器版本，而是要用构建工具构建出来。</code></pre></li>
+<li><p>列举IE与其他浏览器不一样的特性？</p>
+<pre><code>* IE 的渲染引擎是 Trident 与 W3C 标准差异较大：例如盒子模型的怪异模式
+* JS 方面有很多独立的方法，例如事件处理不同：绑定/删除事件，阻止冒泡，阻止默认事件等
+* CSS 方面也有自己独有的处理方式，例如设置透明，低版本IE中使用滤镜的方式
+</code></pre></li>
+<li><p>什么叫优雅降级和渐进增强？</p>
+<pre><code>* 优雅降级：一开始就构建完整的功能，然后再针对低版本浏览器进行兼容
+* 渐进增强：针对低版本浏览器构建页面，然后再针对高级浏览器进行效果、交互等用户体验的改进
+</code></pre></li>
+<li><p>请你谈谈Cookie的弊端？</p>
+<pre><code>* 每个特定的域名下最多生成的 cookie 个数有限制
+* IE 和 Opera 会清理近期最少使用的 cookie，Firefox 会随机清理 cookie
+* cookie 的最大大约为 4096 字节，为了兼容性，一般设置不超过 4095 字节
+* 如果 cookie 被人拦截了，就可以取得所有的 session 信息
+</code></pre></li>
+<li><p>是否了解公钥加密和私钥加密？</p>
+<pre><code>* 私钥用于对数据进行签名，公钥用于对签名进行验证
+* 网站在浏览器端用公钥加密敏感数据，然后在服务器端再用私钥解密
+</code></pre></li>
+<li><p>WEB应用从服务器主动推送Data到客户端有那些方式？</p>
+<pre><code>* AJAX 轮询
+
+* html5 服务器推送事件
+
+  `(new EventSource(SERVER_URL)).addEventListener("message", func);`
+
+* html5 Websocket
+
+  `(new WebSocket(SERVER_URL)).addEventListener("message", func);`
+</code></pre></li>
+<li><p>99%的网站都需要被重构是那本书上写的？</p>
+<p>《网站重构：应用web标准进行设计（第2版）》</p>
+</li>
+<li><p>http状态码有那些？分别代表是什么意思？</p>
+<pre><code>1XX(信息类)：表示接收到请求并且继续处理
+2XX(响应成功)：表示动作被成功接收、理解和接受
+3XX(重定向类)：为了完成指定的动作，必须接受进一步处理
+4XX(客户端错误类)：请求包含错误语法或不能正确执行
+5XX(服务端错误类)：服务器不能正确执行一个正确的请求
+
+200 OK                      请求成功返回
+301 Moved Permanently       页面重定向
+302 Temporarily Moved       暂时重定向
+304 Not Modified            缓存可以继续使用
+400 Bad Request             请求出现语法错误
+401 Unauthorized            未经授权访问
+403 Forbidden               资源禁止访问
+404 Not Found               未找到指定位置的资源
+410 Gone                    请求的文档已经不再可用
+500 Internal Server Error   服务器内部错误
+501 Not Implemented         服务器不支持请求类型
+</code></pre></li>
+<li><p>一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？</p>
+<pre><code>01.浏览器查找域名对应的IP地址(DNS 查询：浏览器缓存-&gt;系统缓存-&gt;路由器缓存-&gt;ISP DNS 缓存-&gt;根域名服务器)
+02.浏览器向 Web 服务器发送一个 HTTP 请求（TCP三次握手）
+03.服务器 301 重定向（从 http://example.com 重定向到 http://www.example.com）
+04.浏览器跟踪重定向地址，请求另一个带 www 的网址
+05.服务器处理请求（通过路由读取资源）
+06.服务器返回一个 HTTP 响应（报头中把 Content-type 设置为 'text/html'）
+07.浏览器进 DOM 树构建
+08.浏览器发送请求获取嵌在 HTML 中的资源（如图片、音频、视频、CSS、JS等）
+09.浏览器显示完成页面
+10.浏览器发送异步请求
+</code></pre></li>
+<li><p>你怎么看待 Web App/hybrid App/Native App？（移动端前端 和 Web 前端区别？）</p>
+<pre><code>* Web App(HTML5)：采用HTML5生存在浏览器中的应用，不需要下载安装
+  - 优点：开发成本低，迭代更新容易，不需用户升级，跨多个平台和终端
+  - 缺点：消息推送不够及时，支持图形和动画效果较差，功能使用限制（相机、GPS等）
+
+* Hybrid App(混合开发)：UI WebView，需要下载安装
+  - 优点：接近 Native App 的体验，部分支持离线功能
+  - 缺点：性能速度较慢，未知的部署时间，受限于技术尚不成熟
+
+* Native App(原生开发)：依托于操作系统，有很强的交互，需要用户下载安装使用
+  - 优点：用户体验完美，支持离线工作，可访问本地资源（通讯录，相册）
+  - 缺点：开发成本高（多系统），开发成本高（版本更新），需要应用商店的审核
+</code></pre></li>
+<li><p>Web 前端开发的注意事项？</p>
+<pre><code>* 特别设置 meta 标签 viewport
+* 百分比布局宽度，结合 box-sizing: border-box;
+* 使用 rem 作为计算单位。rem 只参照跟节点 html 的字体大小计算
+* 使用 css3 新特性。弹性盒模型、多列布局、媒体查询等
+* 多机型、多尺寸、多系统覆盖测试
+</code></pre></li>
+<li><p>在设计 Web APP 时，应当遵循以下几点：</p>
+<pre><code>* 简化不重要的动画/动效/图形文字样式
+* 少用手势，避免与浏览器手势冲突
+* 减少页面内容，页面跳转次数，尽量在当前页面显示
+* 增强 Loading 趣味性，增强页面主次关系
+</code></pre></li>
+<li><p>平时如何管理你的项目？</p>
+<pre><code>* 规定全局样式、公共脚本
+* 严格要求代码注释(html/js/css)
+* 严格要求静态资源存放路径
+* Git 提交必须填写说明
+</code></pre></li>
+<li><p>如何设计突发大规模并发架构？</p>
+<pre><code>* 及时响应(NoSQL缓存)
+* 数据安全(数据备份)
+* 负载均衡
+</code></pre></li>
+<li><p>说说最近最流行的一些东西吧？</p>
+<pre><code>ES6、Node、React、Webpack
+</code></pre></li>
+<li><p>如何做SEO优化?</p>
+<pre><code>* 标题与关键词
+  - 设置有吸引力切合实际的标题，标题中要包含所做的关键词
+
+* 网站结构目录
+  - 最好不要超过三级，每级有“面包屑导航”，使网站成树状结构分布
+
+* 页面元素
+  - 给图片标注"Alt"可以让搜索引擎更友好的收录
+
+* 网站内容
+  - 每个月每天有规律的更新网站的内容，会使搜索引擎更加喜欢
+
+* 友情链接
+  - 对方一定要是正规网站，每天有专业的团队或者个人维护更新
+
+* 内链的布置
+  - 使网站形成类似蜘蛛网的结构，不会出现单独连接的页面或链接
+
+* 流量分析
+  - 通过统计工具(百度统计，CNZZ)分析流量来源，指导下一步的SEO
+</code></pre></li>
+<li><p>移动端（Android、IOS）怎么做好用户体验?</p>
+<pre><code>* 清晰的视觉纵线
+* 信息的分组、极致的减法
+* 利用选择代替输入
+* 标签及文字的排布方式
+* 依靠明文确认密码
+* 合理的键盘利用
+</code></pre></li>
+<li><p>前端页面有哪三层构成，分别是什么？作用是什么？</p>
+<pre><code>* 结构层：由 (X)HTML 标记语言负责，解决页面“内容是什么”的问题
+* 表示层：由 CSS 负责，解决页面“如何显示内容”的问题
+* 行为层：由 JS 脚本负责，解决页面上“内容应该如何对事件作出反应”的问题
+</code></pre></li>
+<li><p>是否了解 Web 注入攻击（最常见 XSS 和 CSRF）？</p>
+<pre><code>* SQL注入
+  - 把SQL命令插入到表单或输入URL查询字符串提交，欺骗服务器达到执行恶意的SQL目的
+
+* XSS(Cross Site Script)，跨站脚本攻击
+  - 攻击者在页面里插入恶意代码，当用户浏览该页之时，执行嵌入的恶意代码达到攻击目的
+
+* CSRF(Cross Site Request Forgery)，跨站点伪造请求
+  - 伪造合法请求，让用户在不知情的情况下以登录的身份访问，利用用户信任达到攻击目的
+</code></pre></li>
+<li><p>线程与进程的区别？</p>
+<pre><code>* 一个程序至少有一个进程，一个进程至少有一个线程
+* 线程的划分尺度小于进程，使得多线程程序的并发性高
+* 进程在执行过程中拥有独立的内存单元，而多个线程共享内存
+* 线程不能够独立执行，必须应用程序提供多个线程执行控制
+</code></pre></li>
+<li><p>如何防范 Web 前端攻击？</p>
+<pre><code>* 不要信任任何外部传入的数据
+  - 针对用户输入作相关的格式检查、过滤等操作
+
+* 不要信任在任何传入的第三方数据
+  - 使用 CORS，设置 Access-Control-Allow-Origin
+
+* 更安全地使用 Cookie
+  - 设置Cookie为HttpOnly，禁止了JavaScript操作Cookie
+
+* 防止网页被其他网站内嵌为iframe
+  - 服务器端设置 X-Frame-Options 响应头，防止页面被内嵌
+</code></pre></li>
 </ul>
+<hr>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1703,7 +1622,7 @@ Class.prototype.isPropertyOf(object);   //是否是方法调用者的原型对�
                     </span>
                     <a href="https://825221503.github.io" class="b-link-green">杜柏林的博客</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2020/03/10/js-answers01/" class="b-link-green">js-Answers</a>
+                    <a href="/2020/03/11/js-answers02/" class="b-link-green">js-Answers(二)</a>
                 </p>
             </div>
 
@@ -1726,7 +1645,7 @@ Class.prototype.isPropertyOf(object);   //是否是方法调用者的原型对�
         repo: '825221503.github.io',
         owner: '825221503',
         admin: [825221503],
-        id: '2020/03/10/js-answers01/',
+        id: '2020/03/11/js-answers02/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -2045,9 +1964,10 @@ Class.prototype.isPropertyOf(object);   //是否是方法调用者的原型对�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/03/11/js-answers02/">
                     <div class="card-image">
@@ -2065,9 +1985,9 @@ Class.prototype.isPropertyOf(object);   //是否是方法调用者的原型对�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -2080,6 +2000,7 @@ Class.prototype.isPropertyOf(object);   //是否是方法调用者的原型对�
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -2098,31 +2019,31 @@ Class.prototype.isPropertyOf(object);   //是否是方法调用者的原型对�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/12/09/shu-ju-jie-gou-yu-suan-fa/">
+                <a href="/2020/03/10/js-answers01/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="数据结构与算法">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="js-Answers">
                         
-                        <span class="card-title">数据结构与算法</span>
+                        <span class="card-title">js-Answers</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这是JavaScript的数据结构与算法
+                            这是JavaScript的问题包含答案
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-12-09
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-10
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/javaScript数据结构与算法/" class="post-category" target="_blank">
-                                    javaScript数据结构与算法
+                            <a href="/categories/js-Answers/" class="post-category" target="_blank">
+                                    js-Answers
                                 </a>
                             
                             
@@ -2132,20 +2053,8 @@ Class.prototype.isPropertyOf(object);   //是否是方法调用者的原型对�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/集合/" target="_blank">
-                        <span class="chip bg-color">集合</span>
-                    </a>
-                    
-                    <a href="/tags/字典、散列表/" target="_blank">
-                        <span class="chip bg-color">字典、散列表</span>
-                    </a>
-                    
-                    <a href="/tags/数组/" target="_blank">
-                        <span class="chip bg-color">数组</span>
-                    </a>
-                    
-                    <a href="/tags/栈等等/" target="_blank">
-                        <span class="chip bg-color">栈等等</span>
+                    <a href="/tags/JavaScript-front-end/" target="_blank">
+                        <span class="chip bg-color">JavaScript front-end</span>
                     </a>
                     
                 </div>
