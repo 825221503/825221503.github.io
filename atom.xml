@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>杜柏林的博客</title>
+  <title>Berlin-珠</title>
   
   <subtitle>berlin blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://825221503.github.io/"/>
-  <updated>2020-03-12T14:46:03.776Z</updated>
+  <updated>2020-03-18T14:36:48.857Z</updated>
   <id>https://825221503.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>js-异步编程</title>
+    <link href="https://825221503.github.io/2020/03/18/js-yi-bu-bian-cheng/"/>
+    <id>https://825221503.github.io/2020/03/18/js-yi-bu-bian-cheng/</id>
+    <published>2020-03-18T14:18:16.000Z</published>
+    <updated>2020-03-18T14:36:48.857Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;javascript-异步编程&quot;&gt;&lt;a href=&quot;#javascript-异步编程&quot; class=&quot;headerlink&quot; title=&quot;javascript 异步编程&quot;&gt;&lt;/a&gt;javascript 异步编程&lt;/h1&gt;&lt;h2 id=&quot;语法特性&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="js-Answers" scheme="https://825221503.github.io/categories/js-Answers/"/>
+    
+    
+      <category term="JavaScript front-end" scheme="https://825221503.github.io/tags/JavaScript-front-end/"/>
+    
+  </entry>
   
   <entry>
     <title>js-Answers(三)</title>

@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>js-异步编程</title>
+      <link href="/2020/03/18/js-yi-bu-bian-cheng/"/>
+      <url>/2020/03/18/js-yi-bu-bian-cheng/</url>
+      
+        <content type="html"><![CDATA[<h1 id="javascript-异步编程"><a href="#javascript-异步编程" class="headerlink" title="javascript 异步编程"></a>javascript 异步编程</h1><h2 id="语法特性"><a href="#语法特性" class="headerlink" title="语法特性"></a>语法特性</h2><blockquote><p>单线程异步机制 什么是单线程</p></blockquote><ul><li>什么是单线程: 同一个时刻 只会有一个运算单元负责处理js代码的解析运行</li><li>为什么是单线程:比如一个js操作在获取元素 一个操作删除元素 会造成程序逻辑混乱或难以理解</li><li>会有什么影响: js当中有一些操作要耗费大量时间(setTimeout(),setInterval(),ajax.send(),div.onclick) 造成js不可能完全执行完一段代码之后，再去执行下一段代码</li><li>解决方式: 把所有需要执行的任务，分为了两种 ， 同步任务，异步任务</li></ul><h2 id="异步操作"><a href="#异步操作" class="headerlink" title="异步操作"></a>异步操作</h2><ul><li>时间函数: setTimeout(fn,1000)   setInterval(fn,1000);</li><li>网络请求: xhr.send() 和硬件进行交互 OSI 七层网络协议  xhr.onload fetch()</li><li>DOM事件:  div.onclick  取决于用户什么时候进行操作</li></ul><h2 id="事件循环"><a href="#事件循环" class="headerlink" title="事件循环"></a>事件循环</h2><blockquote><p>事件循环是js语言的内部负责处理同步任务和异步任务有序执行的机制</p></blockquote><ol><li>会将同步任务放置到一个位置 执行栈当中等待执行 将异步任务放置到等待区域</li><li>将执行栈当中的任务全部执行完成，清空执行栈</li><li>查看当前的等待区域当中有没有可以执行的代码(回调函数)，如果有就放置到任务队列当中</li><li>依次读取任务队列中的任务 依然划分为同步任务和异步任务</li></ol><blockquote><p>js的内部会不断循环执行以上的四个步骤 所以这种机制叫做事件循环</p></blockquote><h2 id="回调地狱"><a href="#回调地狱" class="headerlink" title="回调地狱"></a>回调地狱</h2><ul><li>如果当我们碰到有多个异步请求 并且某个请求的发送需要依赖另一个请求的结果时 我们只能在一个回调函数嵌套另一个回调函数 而且在回调函数中是不能像普通函数使用返回值 而造成代码最终不美观</li></ul><h2 id="并发请求"><a href="#并发请求" class="headerlink" title="并发请求"></a>并发请求</h2><blockquote><p>当我们碰到有多个异步请求 并且需要对于返回结果进行统一处理的时候 非常不方便</p></blockquote><h2 id="promise"><a href="#promise" class="headerlink" title="promise"></a>promise</h2><blockquote><p>将异步操作进行封装 变成一个promise对象 在任意时刻我们需要去访问异步的值的时候我们只需要 调用promise对象的then 方法就能拿到结果 promise可以保证我们在调用then时候一定能够拿到结果(成功/失败)</p></blockquote><h2 id="async-await"><a href="#async-await" class="headerlink" title="async/await"></a>async/await</h2><hr><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> js-Answers </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript front-end </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>js-Answers(三)</title>
       <link href="/2020/03/11/js-answers03/"/>
       <url>/2020/03/11/js-answers03/</url>
