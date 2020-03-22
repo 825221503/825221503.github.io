@@ -6,17 +6,13 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="js-Answers(三), JavaScript,Vue.js,php,Heart have a code, Fine smelling programming">
+    <meta name="keywords" content="vue-生命周期, JavaScript,Vue.js,php,Heart have a code, Fine smelling programming">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY">
-    <meta name="description" content="编程能力
-手写事件侦听器，并要求兼容浏览器
-var eventUtil = {
-  getEvent: function(event) {
-      return event || window.event;
-  },
+    <meta name="description" content="vue生命周期
+即为一个组件从出生到死亡的一个完整周期，主要包括以下4个阶段：创建，挂载，更新，销毁
 
-  getTar">
+创建前：beforeCreate, 创建后:created挂载前：beforeMount, 挂载后：mounted更新前：beforeU">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -24,7 +20,7 @@ var eventUtil = {
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>js-Answers(三) | Berlin-珠</title>
+    <title>vue-生命周期 | Berlin-珠</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -601,13 +597,13 @@ var eventUtil = {
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        js-Answers(三)
+                        vue-生命周期
                     </div>
                 </div>
             </div>
@@ -731,8 +727,8 @@ var eventUtil = {
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/js-Answers/" class="post-category" target="_blank">
-                                js-Answers
+                            <a href="/categories/vue-Answers/" class="post-category" target="_blank">
+                                vue-Answers
                             </a>
                         
                     </div>
@@ -743,7 +739,7 @@ var eventUtil = {
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-11
+                    2020-03-22
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -757,14 +753,14 @@ var eventUtil = {
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        761
+                        802
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        4 分
+                        3 分
                     </div>
                     
                 
@@ -781,357 +777,26 @@ var eventUtil = {
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="编程能力"><a href="#编程能力" class="headerlink" title="编程能力"></a>编程能力</h2><ul>
-<li><p>手写事件侦听器，并要求兼容浏览器</p>
-<pre class="line-numbers language-JavaScript"><code class="language-JavaScript">var eventUtil = {
-  getEvent: function(event) {
-      return event || window.event;
-  },
-
-  getTarget: function(event) {
-      return event.target || event.srcElement;
-  },
-
-  addListener: function(element, type, hander) {
-      if (element.addEventListener) {
-          element.addEventListener(type, hander, false);
-      } else if (element.attachEvent) {
-          element.attachEvent('on' + type, hander);
-      } else {
-          element['on' + type] = hander;
-      }
-  },
-
-  removeListener: function(element, type, hander) {
-      if (element.removeEventListener) {
-          element.removeEventListener(type, hander, false);
-      } else if (element.deattachEvent) {
-          element.detachEvent(type, hander);
-      } else {
-          element['on' + type] = null;
-      }
-  },
-
-  preventDefault: function(event) {
-      if (event.preventDefault) {
-          event.preventDefault();
-      } else {
-          event.returnValue = false;
-      }
-  },
-
-  stopPropagation: function(event) {
-      if (event.stopPropagation) {
-          event.stopPropagation();
-      } else {
-          event.cancelBubble = true;
-      }
-  }
-};
-
-  // 调用
-  (function() {
-    var btn = document.getElementById("btn");
-    var link = document.getElementsByTagName("a")[0];
-
-    eventUtil.addListener(btn, "click", function(event) {
-        var event = eventUtil.getEvent(event);
-        var target = eventUtil.getTarget(event);
-        alert(event.type);
-        alert(target);
-        eventUtil.stopPropagation(event);
-    });
-
-    eventUtil.addListener(link, "click", function(event) {
-        alert("prevent default event");
-        var event = eventUtil.getEvent(event);
-        eventUtil.preventDefault(event);
-    });
-
-    eventUtil.addListener(document.body, "click", function() {
-        alert("click body");
-    });
-})();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h3 id="vue生命周期"><a href="#vue生命周期" class="headerlink" title="vue生命周期"></a>vue生命周期</h3><ul>
+<li><p>即为一个组件从出生到死亡的一个完整周期，主要包括以下4个阶段：创建，挂载，更新，销毁</p>
 </li>
-<li><p>手写事件模型</p>
-<pre class="line-numbers language-JavaScript"><code class="language-JavaScript">var Event = (function () {
-    var list = {}, bind, trigger, remove;
-    bind = function (key, fn) {
-        if (!list[key]) {
-            list[key] = [];
-        }
-        list[key].push(fn);
-    };
-    trigger = function () {
-        var key = Array.prototype.shift.call(arguments);
-        var fns = list[key];
-        if (!fns || fns.length === 0) {
-            return false;
-        }
-        for (var i = 0, fn; fn = fns[i++];) {
-            fn.apply(this, arguments);
-        }
-    };
-    remove = function (key, fn) {
-        var fns = list[key];
-        if (!fns) {
-            return false;
-        }
-        if (!fn) {
-            fns & (fns.length = 0);
-        } else {
-            for (var i = fns.length - 1; i >= 0; i--) {
-                var _fn = fns[i];
-                if (_fn === fn) {
-                    fns.splice(i, 1);
-                }
-            }
-        }
-    };
-    return {
-        bind: bind,
-        trigger: trigger,
-        remove: remove
-    }
-})();
-
-// 调用
-Event.bind('Hit', function(){ console.log('bind event'); }); // 绑定事件
-Event.trigger("Hit", function(){ console.log('trigger event'); }); // 触发事件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<li><p>创建前：beforeCreate, 创建后:created<br>挂载前：beforeMount, 挂载后：mounted<br>更新前：beforeUpdate, 更新后：updated<br>销毁前：beforeDestroy, 销毁后：destroyed</p>
 </li>
-<li><p>手写事件代理，并要求兼容浏览器</p>
-<pre class="line-numbers language-JavaScript"><code class="language-JavaScript">function delegateEvent(parentEl, selector, type, fn) {
-    var handler = function(e){
-          var e = e || window.event;
-          var target = e.target || e.srcElement;
-          if (matchSelector(target, selector)) {
-              if(fn) {
-                  fn.call(target, e);
-              }
-          }
-    };
-    if(parentEl.addEventListener){
-        parentEl.addEventListener(type, handler);
-    }else{
-        parentEl.attachEvent("on" + type, handler);
-    }
-}
-/**
- * support #id, tagName, .className
- */
-function matchSelector(ele, selector) {
-    // if use id
-    if (selector.charAt(0) === "#") {
-        return ele.id === selector.slice(1);
-    }
-    // if use class
-    if (selector.charAt(0) === ".") {
-        return (" " + ele.className + " ").indexOf(" " + selector.slice(1) + " ") != -1;
-    }
-    // if use tagName
-    return ele.tagName.toLowerCase() === selector.toLowerCase();
-}
-
-// 调用
-var box = document.getElementById("box");
-delegateEvent(box, "a", "click", function(){
-    console.log(this.href);
-})<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>手写事件触发器，并要求兼容浏览器</p>
-<pre class="line-numbers language-JavaScript"><code class="language-JavaScript">var fireEvent = function(element, event){
-    if (document.createEventObject){
-        var mockEvent = document.createEventObject();
-        return element.fireEvent('on' + event, mockEvent)
-    }else{
-        var mockEvent = document.createEvent('HTMLEvents');
-        mockEvent.initEvent(event, true, true);
-        return element.dispatchEvent(mockEvent);
-    }
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>手写 Function.bind 函数</p>
-<pre class="line-numbers language-JavaScript"><code class="language-JavaScript">if (!Function.prototype.bind) {
-  Function.prototype.bind = function (oThis) {
-    if (typeof this !== "function") {
-      throw new TypeError("'this' is not function");
-    }
-
-    // bind's default arguments, array without first element
-    // first part arguments for the function
-    var aBindArgs = Array.prototype.slice.call(arguments, 1);
-    var fToBind = this; // the function will be binding
-    var fNOP = function () {};
-    var fBound = function () {
-          // target this will be binding
-          var oThis = this instanceof fNOP ? this : oThis || this;
-          // last part arguments for the function
-          var aCallArgs = Array.prototype.slice.call(arguments);
-          // complete arguments for the function
-          var aFuncArgs = aBindArgs.concat(aCallArgs);
-          return fToBind.apply(oThis, aFuncArgs);
-        };
-
-    // fBound extends fToBind
-    fNOP.prototype = this.prototype;
-    fBound.prototype = new fNOP();
-
-    return fBound;
-  };
-}
-
-// 调用
-var add = function(a, b, c){ return a + b + c;};
-var newAdd = add.bind(null, 1, 2);
-var result = newAdd(3);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>手写数组快速排序</p>
-<pre class="line-numbers language-JavaScript"><code class="language-JavaScript">var quickSort = function(arr) {
-    if (arr.length <= 1) { return arr; }
-    var pivotIndex = Math.floor(arr.length / 2);
-    var pivot = arr.splice(pivotIndex, 1)[0];
-    var left = [];
-    var right = [];
-    for (var i = 0, len = arr.length; i < len; i++){
-        if (arr[i] < pivot) {
-          left.push(arr[i]);
-        } else {
-          right.push(arr[i]);
-        }
-    }
-    return quickSort(left).concat([pivot], quickSort(right));
-};
-
-// 调用
-quickSort([9, 4, 2, 8, 1, 5, 3, 7]);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>手写数组冒泡排序</p>
-<pre class="line-numbers language-JavaScript"><code class="language-JavaScript">var bubble = function(arr){
-    var maxIndex = arr.length - 1, temp, flag;
-    for (var i = maxIndex; i > 0; i--) {
-        flag = true
-        for (var j = 0; j < i; j++) {
-            if (arr[j] > arr[j + 1]) {
-                temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-                flag = false;
-            }
-        }
-        if(! flag){
-            break;
-        }
-    }
-    return arr;
-}
-// 调用
-var arr = bubble([13, 69, 28, 93, 55, 75, 34]);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>手写数组去重</p>
-<pre class="line-numbers language-JavaScript"><code class="language-JavaScript">Array.prototype.unique = function() { return [...new Set(this)];};
-// 调用
-[1, 2, 3, 3, 2, 1].unique();
-
-function unique1(arr){
-    var hash = {}, result = [];
-    for(var i=0, len=arr.length; i<len; i++){
-        if(! hash[arr[i]]){
-          result.push(arr[i]);
-          hash[arr[i]] = true;
-        }
-    }
-    return result;
-}
-// 调用
-unique1([1, 2, 3, 3, 2, 1]);
-
-Array.prototype.unique2 = function(){
-    this.sort();
-    var result = [this[0]];
-    var len = this.length;
-    for(var i = 0; i < len; i++){
-        if(this[i] !== result[result.length - 1]){
-          result.push(this[i]);
-        }
-    }
-    return result;
-}
-// 调用
-[1, 2, 3, 3, 2, 1].unique2();
-
-function unique3(arr){
-    var result = [];
-    for(var i=0; i<arr.length; i++){
-        if(result.indexOf(arr[i]) == -1){
-          result.push(arr[i]);
-        }
-    }
-    return result;
-}
-
-// 调用
-unique3([1, 2, 3, 3, 2, 1]);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>将url的查询参数解析成字典对象</p>
-<pre class="line-numbers language-JavaScript"><code class="language-JavaScript">function parseQuery(url) {
-  url = url == null ? window.location.href : url;
-  var search = url.substring(url.lastIndexOf("?") + 1);
-  var hash = {};
-  var reg = /([^?&=]+)=([^?&=]*)/g;
-  search.replace(reg, function (match, $1, $2) {
-      var name = decodeURIComponent($1);
-      var val = decodeURIComponent($2);
-      hash[name] = String(val);
-      return match;
-  });
-  return hash;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>封装函数节流函数</p>
-<pre class="line-numbers language-JavaScript"><code class="language-JavaScript">var throttle = function(fn, delay, mustRunDelay){
-  var timer = null;
-  var t_start;
-  return function(){
-    var context = this, args = arguments, t_curr = +new Date();
-    clearTimeout(timer);
-    if(!t_start){
-      t_start = t_curr;
-    }
-    if(t_curr - t_start >= mustRunDelay){
-      fn.apply(context, args);
-      t_start = t_curr;
-    } else {
-      timer = setTimeout(function(){
-        fn.apply(context, args);
-      }, delay);
-    }
-  };
-};
-
-// 调用（两次间隔50ms内连续触发不执行，但每累计100ms至少执行一次
-window.onresize = throttle(myFunc, 50, 100);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>用JS实现千位分隔符</p>
-<pre class="line-numbers language-JavaScript"><code class="language-JavaScript">function test1(num){
-  var str = (+ num) + '';
-  var len = str.length;
-  if(len <= 3) return str;
-  num = '';
-  while(len > 3){
-      len -= 3;
-      num = ',' + str.substr(len, 3) + num;
-  }
-  return str.substr(0, len) + num;
-}
-
-function test2(num){
-  // ?= 正向匹配:匹配位置
-  // ?! 正向不匹配:排除位置
-  var str = (+num).toString();
-  var reg = /(?=(?!\b)(\d{3})+$)/g;
-  return str.replace(reg, ',');
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
+</ul>
+<p>我平时用的比较多的钩了是created和mounted，created用于获取后台数据，mounted用于dom挂载完后做一些dom操作,以及初始化插件等.beforeDestroy用户清除定时器以及解绑事件等,<br>另外还新增了使用内置组件 keep-alive 来缓存实例，而不是频繁创建和销毁(开销大)</p>
+<p>actived 实例激活<br>deactived 实例失效</p>
+<p>以下为详解版,大家理解就ok:<br>生命周期钩子函数（11个）Function（类型），标注蓝色的那个是属于类型的意思。</p>
+<ul>
+<li>beforeCreate    Function    在实例初始化之后，数据观测 (data observer) 和 event/watcher 事件配置之前被调用。</li>
+<li>created    Function    在实例创建完成后被立即调用。在这一步，实例已完成以下的配置：数据观测 (data observer)， 属性和方法的运算，watch/event 事件回调。然而，挂载阶段还没开始，$el 属性目前不可见。</li>
+<li>beforeMount    Function    在挂载开始之前被调用：相关的 render 函数首次被调用。</li>
+<li>mounted    Function    el 被新创建的 vm.el 替换，并挂载到实例上去之后调用该钩子。如果 root 实例挂载了一个文档内元素，当 mounted 被调用时 vm.$el 也在文档内。</li>
+<li>beforeUpdate    Function    数据更新时调用，发生在虚拟 DOM 打补丁之前。这里适合在更新之前访问现有的 DOM，比如手动移除已添加的事件监听器。该钩子在服务器端渲染期间不被调用，因为只有初次渲染会在服务端进行。</li>
+<li>updated    Function    由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。</li>
+<li>activated    Function    keep-alive 组件激活时调用。该钩子在服务器端渲染期间不被调用。</li>
+<li>deactivated    Function    keep-alive 组件停用时调用。该钩子在服务器端渲染期间不被调用。</li>
+<li>beforeDestroy    Function    实例销毁之前调用。在这一步，实例仍然完全可用。该钩子在服务器端渲染期间不被调用。</li>
+<li>destroyed    Function    Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。该钩子在服务器端渲染期间不被调用。<br>errorCaptured（2.5.0+ 新增）    (err: Error, vm: Component, info: string) =&gt; ?boolean    当捕获一个来自子孙组件的错误时被调用。此钩子会收到三个参数：错误对象、发生错误的组件实例以及一个包含错误来源信息的字符串。此钩子可以返回 false 以阻止该错误继续向上传播。</li>
 </ul>
 <hr>
 <script>
@@ -1302,7 +967,7 @@ function test2(num){
                     </span>
                     <a href="https://825221503.github.io" class="b-link-green">Berlin-珠</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2020/03/11/js-answers03/" class="b-link-green">js-Answers(三)</a>
+                    <a href="/2020/03/22/vue-sheng-ming-zhou-qi/" class="b-link-green">vue-生命周期</a>
                 </p>
             </div>
 
@@ -1325,7 +990,7 @@ function test2(num){
         repo: '825221503.github.io',
         owner: '825221503',
         admin: [825221503],
-        id: '2020/03/11/js-answers03/',
+        id: '2020/03/22/vue-sheng-ming-zhou-qi/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1644,41 +1309,43 @@ function test2(num){
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/18/js-yi-bu-bian-cheng/">
+                <a href="/2020/03/22/vue-sheng-ming-zhou-qi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="js-异步编程">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="vue-生命周期">
                         
-                        <span class="card-title">js-异步编程</span>
+                        <span class="card-title">vue-生命周期</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这是前端的问题编程能力
+                            vue生命周期钩子函数有哪些
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-22
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/js-Answers/" class="post-category" target="_blank">
-                                    js-Answers
+                            <a href="/categories/vue-Answers/" class="post-category" target="_blank">
+                                    vue-Answers
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1697,24 +1364,24 @@ function test2(num){
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/11/js-answers02/">
+                <a href="/2020/03/18/js-yi-bu-bian-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="js-Answers(二)">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="js-异步编程">
                         
-                        <span class="card-title">js-Answers(二)</span>
+                        <span class="card-title">js-异步编程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这是前端的问题包含答案
+                            这是前端的问题编程能力
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-11
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-18
                             </span>
                         <span class="publish-author">
                             

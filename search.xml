@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>vue-生命周期</title>
+      <link href="/2020/03/22/vue-sheng-ming-zhou-qi/"/>
+      <url>/2020/03/22/vue-sheng-ming-zhou-qi/</url>
+      
+        <content type="html"><![CDATA[<h3 id="vue生命周期"><a href="#vue生命周期" class="headerlink" title="vue生命周期"></a>vue生命周期</h3><ul><li><p>即为一个组件从出生到死亡的一个完整周期，主要包括以下4个阶段：创建，挂载，更新，销毁</p></li><li><p>创建前：beforeCreate, 创建后:created<br>挂载前：beforeMount, 挂载后：mounted<br>更新前：beforeUpdate, 更新后：updated<br>销毁前：beforeDestroy, 销毁后：destroyed</p></li></ul><p>我平时用的比较多的钩了是created和mounted，created用于获取后台数据，mounted用于dom挂载完后做一些dom操作,以及初始化插件等.beforeDestroy用户清除定时器以及解绑事件等,<br>另外还新增了使用内置组件 keep-alive 来缓存实例，而不是频繁创建和销毁(开销大)</p><p>actived 实例激活<br>deactived 实例失效</p><p>以下为详解版,大家理解就ok:<br>生命周期钩子函数（11个）Function（类型），标注蓝色的那个是属于类型的意思。</p><ul><li>beforeCreate    Function    在实例初始化之后，数据观测 (data observer) 和 event/watcher 事件配置之前被调用。</li><li>created    Function    在实例创建完成后被立即调用。在这一步，实例已完成以下的配置：数据观测 (data observer)， 属性和方法的运算，watch/event 事件回调。然而，挂载阶段还没开始，$el 属性目前不可见。</li><li>beforeMount    Function    在挂载开始之前被调用：相关的 render 函数首次被调用。</li><li>mounted    Function    el 被新创建的 vm.el 替换，并挂载到实例上去之后调用该钩子。如果 root 实例挂载了一个文档内元素，当 mounted 被调用时 vm.$el 也在文档内。</li><li>beforeUpdate    Function    数据更新时调用，发生在虚拟 DOM 打补丁之前。这里适合在更新之前访问现有的 DOM，比如手动移除已添加的事件监听器。该钩子在服务器端渲染期间不被调用，因为只有初次渲染会在服务端进行。</li><li>updated    Function    由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。</li><li>activated    Function    keep-alive 组件激活时调用。该钩子在服务器端渲染期间不被调用。</li><li>deactivated    Function    keep-alive 组件停用时调用。该钩子在服务器端渲染期间不被调用。</li><li>beforeDestroy    Function    实例销毁之前调用。在这一步，实例仍然完全可用。该钩子在服务器端渲染期间不被调用。</li><li>destroyed    Function    Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。该钩子在服务器端渲染期间不被调用。<br>errorCaptured（2.5.0+ 新增）    (err: Error, vm: Component, info: string) =&gt; ?boolean    当捕获一个来自子孙组件的错误时被调用。此钩子会收到三个参数：错误对象、发生错误的组件实例以及一个包含错误来源信息的字符串。此钩子可以返回 false 以阻止该错误继续向上传播。</li></ul><hr><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> vue-Answers </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript front-end </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>js-异步编程</title>
       <link href="/2020/03/18/js-yi-bu-bian-cheng/"/>
       <url>/2020/03/18/js-yi-bu-bian-cheng/</url>

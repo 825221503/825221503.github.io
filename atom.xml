@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://825221503.github.io/"/>
-  <updated>2020-03-18T14:36:48.857Z</updated>
+  <updated>2020-03-22T10:28:06.716Z</updated>
   <id>https://825221503.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue-生命周期</title>
+    <link href="https://825221503.github.io/2020/03/22/vue-sheng-ming-zhou-qi/"/>
+    <id>https://825221503.github.io/2020/03/22/vue-sheng-ming-zhou-qi/</id>
+    <published>2020-03-22T07:18:16.000Z</published>
+    <updated>2020-03-22T10:28:06.716Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;vue生命周期&quot;&gt;&lt;a href=&quot;#vue生命周期&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="vue-Answers" scheme="https://825221503.github.io/categories/vue-Answers/"/>
+    
+    
+      <category term="JavaScript front-end" scheme="https://825221503.github.io/tags/JavaScript-front-end/"/>
+    
+  </entry>
   
   <entry>
     <title>js-异步编程</title>
