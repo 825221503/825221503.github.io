@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://825221503.github.io/2019/11/05/js-ji-chu/</loc>
+    <lastmod>2020-03-25</lastmod>
+  </url>  <url>
     <loc>https://825221503.github.io/2020/03/22/vue-sheng-ming-zhou-qi/</loc>
     <lastmod>2020-03-22</lastmod>
   </url>  <url>
@@ -21,8 +24,5 @@
   </url>  <url>
     <loc>https://825221503.github.io/2019/12/09/shu-ju-jie-gou-yu-suan-fa/</loc>
     <lastmod>2019-12-09</lastmod>
-  </url>  <url>
-    <loc>https://825221503.github.io/2019/11/05/js-ji-chu/</loc>
-    <lastmod>2019-11-05</lastmod>
   </url>
 </urlset>
